@@ -45,6 +45,12 @@ body {
     line-height: 1.13;
 }
 
+.h3 {
+    font-family: "FreightDisplayW01", sans-serif;
+    font-size: 32px;
+    line-height: 1.06;
+}
+
 .h4 {
     font-family: "SelinaW08-Calligraphic", sans-serif;
     font-size: 28px;
@@ -66,5 +72,9 @@ a {
 
     .h2 {
         font-size: 46px;
+    }
+
+    .h3 {
+        font-size: 36px;
     }
 }
