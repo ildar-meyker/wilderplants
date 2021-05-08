@@ -559,6 +559,7 @@ body {
 
 .container {
   max-width: 1240px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -586,6 +587,10 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .h2 {
     font-size: 46px;
   }
@@ -612,7 +617,7 @@ a:hover {
 }
 
 .about-guide {
-  padding: 50px 30px;
+  padding: 50px 0;
   background: linear-gradient(90deg, rgba(22, 160, 133, 0.1) 0%, rgba(244, 208, 63, 0.1) 100%);
 }
 .about-guide__h1 {
@@ -649,7 +654,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .about-guide {
-    padding: 80px 30px;
+    padding: 80px 0;
   }
   .about-guide__list {
     display: flex;
@@ -666,27 +671,63 @@ a:hover {
 
 .footer {
   background: linear-gradient(90deg, #FEFEC9 0%, #B3DBEF 100%);
-  padding: 10px 30px;
   font-size: 18px;
 }
 .footer__logo {
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 .footer__links {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 .footer__links div {
   margin-bottom: 20px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.33;
 }
 .footer__links li {
-  margin-top: 14px;
+  margin-top: 12px;
   line-height: 1.77;
+}
+.footer__links--social {
+  white-space: nowrap;
+}
+.footer__links--social .icon {
+  width: 30px;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  top: 3px;
+}
+.footer__links--social .icon-envelope-o,
+.footer__links--social .icon-checkmark {
+  font-size: 22px;
 }
 .footer small {
   display: block;
   padding: 55px 0;
+  margin: 0 -15px;
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    font-size: 16px;
+  }
+  .footer__menu {
+    display: flex;
+  }
+  .footer__logo {
+    flex-grow: 1;
+    padding-right: 40px;
+  }
+  .footer__links {
+    flex-basis: 240px;
+    padding-left: 40px;
+  }
+  .footer small {
+    margin: 0;
+    font-size: 16px;
+  }
 }

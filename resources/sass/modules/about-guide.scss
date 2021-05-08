@@ -1,5 +1,5 @@
 .about-guide {
-    padding: 50px 30px;
+    padding: 50px 0;
     background: linear-gradient(90deg, rgba(22, 160, 133, 0.1) 0%, rgba(244, 208, 63, 0.1) 100%);
 
     &__h1 {
@@ -45,7 +45,7 @@
 
 @media  (min-width: 768px) {
     .about-guide {
-        padding: 80px 30px;
+        padding: 80px 0;
 
         &__list {
             display: flex;

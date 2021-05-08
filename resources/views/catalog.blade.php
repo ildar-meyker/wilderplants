@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-</head>
-<body>
+@extends('layouts.default')
 
-	<header class="header">
+@section('content')
+    <header class="header">
 
 		<a href="#" class="header__logo">
 			<img src="{{ asset('/img/logo.svg') }}" alt="">
@@ -151,15 +143,15 @@
                     </nav>
                 </div>
 
-                <div class="footer__links">
+                <div class="footer__links footer__links--social">
                     <div>CONNECT WITH US</div>
                     <nav>
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Pinterest</a></li>
-                            <li><a href="#">hello@wilderplants.com</a></li>
-                            <li><a href="#">Feedback form</a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="icon icon-pinterest-p"></i> Pinterest</a></li>
+                            <li><a href="#"><i class="icon icon-envelope-o"></i> hello@wilderplants.com</a></li>
+                            <li><a href="#"><i class="icon icon-checkmark"></i> Feedback form</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -170,7 +162,4 @@
             </small>
         </div>
 	</footer>
-
-    <script src="{{ mix('/js/app.js') }}"></script>
-</body>
-</html>
+@endsection

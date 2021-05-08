@@ -1,0 +1,70 @@
+body {
+    font-family: "Brown", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px;
+    font-family: "Brown", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #000;
+
+    &:hover {
+        color: #F3C093;
+    }
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-family: "FreightDisplayW01", sans-serif;
+    font-size: 54px;
+}
+
+.h2 {
+    font-family: "FreightDisplayW01", sans-serif;
+    font-size: 40px;
+    line-height: 1.13;
+}
+
+.h4 {
+    font-family: "SelinaW08-Calligraphic", sans-serif;
+    font-size: 28px;
+}
+
+a {
+    transition: all .3s;
+    
+    &:hover {
+        color: #f3c093;
+    }
+}
+
+@media  (min-width: 768px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .h2 {
+        font-size: 46px;
+    }
+}
