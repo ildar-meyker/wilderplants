@@ -1,0 +1,131 @@
+
+.nav-main {
+    display: inline-block;
+
+    > li {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-right: 28px;
+
+        &:hover {
+
+            .nav-main__sublist {
+                visibility: visible;
+                
+                ul {
+                    top: 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+
+        &:hover {
+            color: #F3C093;
+        }
+    }
+
+
+    &--left {
+        display: none;
+    }
+
+    &--right {
+        display: none;
+        text-align: right;
+
+        li {
+            margin-left: 28px;
+            margin-right: 0;
+        }
+    }
+
+    &--icons {
+        text-align: right;
+
+        li {
+            margin-left: 28px;
+            margin-right: 0;
+        }
+
+        li:not(:last-child) {
+            display: none;
+        }
+    }
+
+
+    &__sublist {
+        visibility: hidden;
+        position: absolute;
+        z-index: 100;
+        top: 100%;
+        min-width: 250px;
+        left: 0;
+        padding-top: 7px;
+
+        ul {
+            position: relative;
+            top: 10px;
+            transition: .3s all;
+            background: rgb(81 81 81);
+            opacity: 0;
+        }
+
+        a {
+            display: block;
+            padding: 20px 10px;
+            font-size: 18px;
+
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+
+    &__cart {
+        position: relative;
+        margin-right: 10px !important;
+
+        &__count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #ec6342;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 18px;
+            color: #fff;
+        }
+    }
+}
+
+@media  (min-width: 768px) {
+
+    .nav-main {
+
+        &--left,
+        &--right {
+            display: inline-block;
+        }
+    
+        &--icons {
+            li {
+                &:not(:last-child) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+}

@@ -529,6 +529,7 @@ template {
   font-display: swap;
 }
 body {
+  min-width: 320px;
   font-family: "Brown", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -605,9 +606,108 @@ a:hover {
     font-size: 36px;
   }
 }
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.hamburger-box {
+  width: 32px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 32px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+/*
+   * Squeeze
+   */
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 .header {
   position: relative;
-  min-height: 370px;
   background: url("/img/headers/1.jpeg") no-repeat 50% 50%;
   background-size: cover;
 }
@@ -621,39 +721,108 @@ a:hover {
   background: #000;
   opacity: 0.3;
 }
-.header * {
+.header__inner {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.header__topbar {
+  padding-top: 20px;
+  display: flex;
+  margin: 0 -30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.header__topbar__left {
+  flex: 1 0 30%;
+  padding-right: 10px;
+}
+.header__topbar__right {
+  flex: 1 0 30%;
+  padding-left: 10px;
+  text-align: right;
+}
+.header__topbar__center {
+  position: relative;
+  top: -10px;
+  width: 33.33%;
+  max-width: 160px;
+  text-align: center;
+}
+.header__topbar.is-active {
+  background: #fff;
+}
+.header__topbar.is-active .header__logo,
+.header__topbar.is-active .nav-main--icons .icon {
+  filter: invert(1) !important;
+}
+.header__logo {
+  width: 100%;
+  max-height: 40px;
+}
+.header__h1 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
 }
 
-.about-guide {
+@media (min-width: 768px) {
+  .header__inner {
+    height: 350px;
+  }
+  .header__topbar {
+    padding-top: 30px;
+    margin: 0 -15px;
+  }
+  .header__topbar__center {
+    top: -20px;
+    width: 20%;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__logo {
+    max-height: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header__topbar {
+    padding-top: 40px;
+  }
+}
+.choosing {
   padding: 50px 0;
   background: linear-gradient(90deg, rgba(22, 160, 133, 0.1) 0%, rgba(244, 208, 63, 0.1) 100%);
 }
-.about-guide__h1 {
+.choosing__h1 {
   text-align: center;
 }
-.about-guide__h2 {
+.choosing__h2 {
   text-align: center;
   margin-top: 60px;
 }
-.about-guide__link {
+.choosing__link {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 50px;
 }
-.about-guide__item {
+.choosing__item {
   margin-bottom: 15px;
 }
-.about-guide__item:last-child img {
+.choosing__item:last-child img {
   margin: 35px 0;
 }
-.about-guide__image {
+.choosing__image {
   display: flex;
   justify-content: center;
   height: 180px;
 }
-.about-guide__desc {
+.choosing__desc {
   padding: 0 60px;
   font-size: 17px;
   font-weight: 700;
@@ -663,15 +832,15 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .about-guide {
+  .choosing {
     padding: 80px 0;
   }
-  .about-guide__list {
+  .choosing__list {
     display: flex;
     max-width: 1060px;
     margin: 0 auto;
   }
-  .about-guide__item {
+  .choosing__item {
     flex: 0 0 33.33%;
   }
 }
@@ -775,5 +944,172 @@ a:hover {
   .footer small {
     margin: 0;
     font-size: 16px;
+  }
+}
+.nav-mobile {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  background: #fff;
+  padding: 0 10px;
+  border-top: 1px solid #332933;
+  display: none;
+}
+.nav-mobile.is-active {
+  display: block;
+}
+.nav-mobile__arrow {
+  position: relative;
+}
+.nav-mobile__arrow:before {
+  transition: 0.3s border-color;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -2px;
+  border-width: 4px;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: #333;
+  content: " ";
+}
+.nav-mobile > ul > li {
+  border-bottom: 1px solid #332933;
+}
+.nav-mobile > ul > li:hover .nav-main__arrow:before {
+  margin-top: -6px;
+  border-top-color: #f3c093;
+  transform: scale(1, -1);
+}
+.nav-mobile > ul > li:hover ul {
+  display: block;
+}
+.nav-mobile a {
+  display: block;
+  padding: 22px 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.nav-mobile a:hover {
+  color: #f3c093;
+}
+.nav-mobile ul ul {
+  display: none;
+  border-top: 1px solid #332933;
+  background: #515151;
+}
+.nav-mobile ul ul li {
+  border-bottom: 1px solid #737373;
+}
+.nav-mobile ul ul li:last-child {
+  border-bottom: 0;
+}
+.nav-mobile ul ul a {
+  font-size: 18px;
+  color: #fff;
+}
+.nav-mobile ul ul a:hover {
+  background: #fff;
+}
+
+.nav-main {
+  display: inline-block;
+}
+.nav-main > li {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-right: 28px;
+}
+.nav-main > li:hover .nav-main__sublist {
+  visibility: visible;
+}
+.nav-main > li:hover .nav-main__sublist ul {
+  top: 0;
+  opacity: 1;
+}
+.nav-main a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.nav-main a:hover {
+  color: #F3C093;
+}
+.nav-main--left {
+  display: none;
+}
+.nav-main--right {
+  display: none;
+  text-align: right;
+}
+.nav-main--right li {
+  margin-left: 28px;
+  margin-right: 0;
+}
+.nav-main--icons {
+  text-align: right;
+}
+.nav-main--icons li {
+  margin-left: 28px;
+  margin-right: 0;
+}
+.nav-main--icons li:not(:last-child) {
+  display: none;
+}
+.nav-main__sublist {
+  visibility: hidden;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  min-width: 250px;
+  left: 0;
+  padding-top: 7px;
+}
+.nav-main__sublist ul {
+  position: relative;
+  top: 10px;
+  transition: 0.3s all;
+  background: #515151;
+  opacity: 0;
+}
+.nav-main__sublist a {
+  display: block;
+  padding: 20px 10px;
+  font-size: 18px;
+}
+.nav-main__sublist a:hover {
+  background: #fff;
+}
+.nav-main__cart {
+  position: relative;
+  margin-right: 10px !important;
+}
+.nav-main__cart__count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ec6342;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .nav-main--left, .nav-main--right {
+    display: inline-block;
+  }
+  .nav-main--icons li:not(:last-child) {
+    display: inline-block;
   }
 }

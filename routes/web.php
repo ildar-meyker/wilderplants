@@ -16,7 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('catalog');
 });
-
-Route::get('/catalog-item', function () {
-    return view('catalog-item');
-});

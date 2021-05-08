@@ -19,6 +19,7 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
-        "destyle.css": "^2.0.2"
+        "destyle.css": "^2.0.2",
+        "jquery": "^3.6.0"
     }
 }

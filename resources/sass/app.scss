@@ -4,8 +4,13 @@
 @import "./partials/fonts";
 @import "./partials/common";
 
+@import "./vendors/hamburger";
+
 @import "./modules/header";
-@import "./modules/about-guide";
+@import "./modules/choosing";
 @import "./modules/subscribe";
 @import "./modules/footer";
+@import "./modules/nav-mobile";
+@import "./modules/nav-main";
+
 
