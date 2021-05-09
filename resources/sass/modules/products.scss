@@ -1,0 +1,229 @@
+.products {
+    padding: 40px 0;
+
+    &__filter {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: -35px;
+    }
+
+    &__col {
+        margin-top: 35px;
+    }
+
+    &__item {
+        position: relative;
+        border: 1px solid #b0b0b0;
+        
+
+        &:before,
+        &:after {
+            content: ' ';
+            transition: .3s all;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &:before {
+            background: #000;
+        }
+
+        &:after {
+            content: 'SEE OPTIONS';
+            padding-top: 200px;
+            text-align: center;
+            color: #fff;
+        }
+
+        &:hover {
+
+            &:before {
+                visibility: visible;
+                opacity: 0.5;
+            }
+
+            &:after {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .products__like {
+                .icomoon-heart-o {
+                    filter: invert(1)!important;
+                    opacity: 1;
+                } 
+            }
+        }
+
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__like {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        padding: 33px 0;
+        font-size: 20px;
+
+        .icomoon-heart-o {
+            opacity: 0.5;
+        }
+
+        .icomoon-heart {
+            display: none;
+            color: #F3C093;
+        }
+
+        &.is-active {
+            .icomoon-heart-o {
+                display: none;
+            }
+    
+            .icomoon-heart {
+                display: inline;
+            }
+        }
+    }
+
+    &__image {
+        padding: 40px 0;
+        height: 365px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+        background: rgba(#f3c093, .22);
+        padding: 23px 0;
+    }
+
+    &__name {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+
+    &__icons {
+        margin-top: 30px;
+        min-height: 20px;
+        font-size: 0;
+
+        i {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+            margin: 0 7px;
+        }
+    }
+
+    &__icon-air {
+        background: url('/img/svg-icons/air.svg') no-repeat;
+    }
+
+    &__icon-glasses {
+        background: url('/img/svg-icons/glasses.svg') no-repeat;
+    }
+
+    &__icon-moon {
+        background: url('/img/svg-icons/moon.svg') no-repeat;
+    }
+
+    &__icon-bacteria {
+        background: url('/img/svg-icons/bacteria.svg') no-repeat;
+    }
+
+    &__icon-footprint {
+        background: url('/img/svg-icons/footprint.svg') no-repeat;
+    }
+
+    &__icon-nasa {
+        background: url('/img/svg-icons/nasa.svg') no-repeat;
+    }
+
+    &__icon-plain {
+        background: url('/img/svg-icons/plain.svg') no-repeat;
+    }
+
+}
+
+@media  (min-width: 768px) {
+    .products {
+
+        padding: 65px 0;
+
+        &__filter {
+            display: none;
+        }
+
+        &__inner {
+            display: flex;
+        }
+
+        &__col-side {
+            flex: 0 0 33.33%;
+            padding-right: 15px;
+        }
+
+        &__col-main {
+            flex: 0 0 66.66%;
+            padding-left: 15px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: none;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        &__col {
+            flex: 0 0 50%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media  (min-width: 1200px) {
+    .products {
+
+        &__col-side {
+            flex: 0 0 25%;
+        }
+
+        &__col-main {
+            flex: 0 0 75%;
+        }
+
+        &__col {
+            flex: 0 0 33.33%;
+        }
+    }
+}

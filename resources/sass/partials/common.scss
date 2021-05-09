@@ -14,6 +14,7 @@ body {
 }
 
 .button-link {
+    transition: all .3s;
     display: inline-block;
     padding: 10px;
     font-family: "Brown", sans-serif;
@@ -24,13 +25,18 @@ body {
     letter-spacing: 1px;
     color: #000;
 
+    &--type-2 {
+        letter-spacing: 2px;
+    }
+
     &:hover {
         color: #F3C093;
     }
 }
 
 .container {
-    max-width: 1240px;
+    
+    max-width: 1024px;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -79,3 +85,12 @@ a {
         font-size: 36px;
     }
 }
+
+@media  (min-width: 1200px) {
+
+    .container {
+        max-width: 1240px;
+    }
+ 
+}
+
