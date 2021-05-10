@@ -5,13 +5,22 @@
 @import "./partials/common";
 
 @import "./vendors/hamburger";
+@import "./vendors/icheck-minimal-grey";
+@import "./vendors/loaders";
 
 @import "./modules/header";
+@import "./modules/footer";
+@import "./modules/form";
+@import "./modules/article";
+
 @import "./modules/choosing";
 @import "./modules/subscribe";
-@import "./modules/footer";
-@import "./modules/nav-mobile";
+@import "./modules/products";
+@import "./modules/filter";
+@import "./modules/popup";
+
+@import "./modules/nav-side";
 @import "./modules/nav-main";
 @import "./modules/nav-pager";
-@import "./modules/products";
+
 

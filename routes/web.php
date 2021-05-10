@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('catalog');
 });
+
+Route::get('/info/1', function () {
+    return view('info-pages.1');
+});
+
+Route::get('/info/2', function () {
+    return view('info-pages.2');
+});

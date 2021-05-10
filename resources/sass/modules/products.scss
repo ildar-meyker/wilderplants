@@ -124,9 +124,10 @@
     }
 
     &__name {
-        font-size: 15px;
         text-transform: uppercase;
-        font-weight: normal;
+        font-family: 'Calluna Sans W01 Regular', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
     }
 
     &__icons {
@@ -188,11 +189,13 @@
 
         &__col-side {
             flex: 0 0 33.33%;
+            max-width: 33.33%;
             padding-right: 15px;
         }
 
         &__col-main {
             flex: 0 0 66.66%;
+            max-width: 66.66%;
             padding-left: 15px;
         }
 
@@ -206,6 +209,7 @@
 
         &__col {
             flex: 0 0 50%;
+            max-width: 50%;
             padding: 0 15px;
         }
     }
@@ -216,14 +220,17 @@
 
         &__col-side {
             flex: 0 0 25%;
+            max-width: 25%;
         }
 
         &__col-main {
             flex: 0 0 75%;
+            max-width: 75%;
         }
 
         &__col {
             flex: 0 0 33.33%;
+            max-width: 33.33%;
         }
     }
 }

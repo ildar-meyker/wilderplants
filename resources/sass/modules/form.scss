@@ -1,0 +1,25 @@
+.form {
+
+    &__check {
+        display: block;
+        margin-top: 17px;
+        font-family: 'Calluna Sans W01 Regular', sans-serif;
+        font-size: 17px;
+        line-height: 1.2;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        span {
+            position: relative;
+            top: 1px;
+            margin-left: 3px;
+        }
+
+        &--has-info {
+            position: relative;
+            padding-right: 30px;
+        }
+    }
+}

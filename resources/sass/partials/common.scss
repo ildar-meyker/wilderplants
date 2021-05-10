@@ -3,6 +3,10 @@ body {
     font-family: "Brown", sans-serif;
     font-weight: 300;
     font-size: 16px;
+
+    &.locked {
+        overflow: hidden;
+    }
 }
 
 .text-center {
@@ -19,7 +23,7 @@ body {
     padding: 10px;
     font-family: "Brown", sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: underline;
     letter-spacing: 1px;
@@ -35,37 +39,43 @@ body {
 }
 
 .container {
-    
+    box-sizing: content-box;
     max-width: 1024px;
     padding: 0 30px;
     margin: 0 auto;
+
+    &--wide {
+        max-width: none;
+    }
 }
 
 .h1 {
-    font-family: "FreightDisplayW01", sans-serif;
+    font-family: "Freight Display W01 Bold", sans-serif;
     font-size: 54px;
 }
 
 .h2 {
-    font-family: "FreightDisplayW01", sans-serif;
+    font-family: "Freight Display W01 Bold", sans-serif;
     font-size: 40px;
     line-height: 1.13;
 }
 
 .h3 {
-    font-family: "FreightDisplayW01", sans-serif;
+    font-family: "Freight Display W01 Bold", sans-serif;
     font-size: 32px;
     line-height: 1.06;
 }
 
 .h4 {
-    font-family: "SelinaW08-Calligraphic", sans-serif;
+    font-family: "Selina W08 Calligraphic", sans-serif;
     font-size: 28px;
 }
 
-a {
+a, button {
     transition: all .3s;
-    
+}
+
+a {
     &:hover {
         color: #f3c093;
     }
@@ -90,7 +100,12 @@ a {
 
     .container {
         max-width: 1240px;
+
+        &--wide {
+            max-width: 1280px;
+        }
     }
  
 }
+
 

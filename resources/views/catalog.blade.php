@@ -65,12 +65,12 @@
         </div>
 
         {{--  mobile --}}
-        <nav class="nav-mobile" id="nav-mobile">
+        <nav class="nav-side" id="nav-side">
             <ul>
                 <li><a href="#">Take A Quiz</a></li>
                 <li><a href="#">Shop Plants</a></li>
-                <li>
-                    <a href="#" class="nav-mobile__arrow">Plant Care</a>
+                <li class="nav-side__item nav-side__item--has-sublist">
+                    <a href="#" class="nav-side__arrow">Plant Care</a>
                     <ul>
                         <li><a href="#">Plant Parenthood</a></li>
                         <li><a href="#">A-Z Care Cards</a></li>
@@ -89,18 +89,203 @@
 
 	{{--  products --}}
     <section class="products">
-        <div class="container">
+        <div class="container container--wide">
 
             <div class="products__filter">
-                <button type="button" class="button-link button-link--type-2">
-                    Filters & search
+                <button type="button" class="button-link button-link--type-2 js-filter-open">
+                    FILTERS & SEARCH
                 </button>
             </div>
 
             <div class="nav-pager__count">Showing 1 - 24 of 90 Plants</div>
 
             <div class="products__inner">
-                <div class="products__col-side"></div>
+                <div class="products__col-side">
+                
+                    {{--  filter --}}
+                    <aside class="filter" id="filter">
+                        <div class="filter__overlay"></div>
+                        
+                        <form action="#" class="filter__window">
+
+                            <button type="button" class="filter__close">
+                                <i class="icomoon-close"></i>
+                            </button>
+
+                            <div class="filter__label">
+                                <div class="filter__label__title">FILTERS & SEARCH</div>
+                                <button type="button" class="filter__label__reset">Reset all</button>
+                            </div>
+
+                            <div class="filter__search">
+                                <input type="text" class="filter__search__input" placeholder="Search">
+                                <button type="button" class="filter__search__button">
+                                    <i class="icomoon-search"></i>
+                                </button>
+                            </div>
+
+                            <div class="filter__group">
+                                <div class="filter__header">
+                                    <div class="filter__title">
+                                        WINDOW DIRECTION
+                                    </div>
+                                    <a href="#" class="filter__info filter__info--for-header" data-src="/info/1">
+                                        <i class="icomoon-information-solid"></i>
+                                    </a>
+                                </div>
+                                <div class="filter__crop">
+                                    <div class="filter__list">
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>North</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>East</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>South</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>West</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__group">
+                                <div class="filter__header">
+                                    <div class="filter__title">
+                                        DISTANCE FROM THE WINDOW
+                                    </div>
+                                </div>
+                                <div class="filter__crop">
+                                    <div class="filter__list">
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>0-1 feet into the room</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>0-1 feet into the room</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>2-5 feet into the room</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>5-10 feet into the room</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__group">
+                                <div class="filter__header">
+                                    <div class="filter__title">
+                                        STYLE
+                                    </div>
+                                </div>
+                                <div class="filter__crop">
+                                    <div class="filter__list">
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Desert</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Tropics</span>
+                                            </label>
+                                        </div>
+                                        <div class="form__check">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Forest</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter__group">
+                                <div class="filter__header">
+                                    <div class="filter__title">
+                                        SUPER POWERS
+                                    </div>
+                                </div>
+                                <div class="filter__crop">
+                                    <div class="filter__list">
+                                        <div class="form__check form__check--has-info">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Air-Purifying</span>
+                                            </label>
+                                            <a href="#" class="filter__info" data-src="/info/2">
+                                                <i class="icomoon-information-solid"></i>
+                                            </a>
+                                        </div>
+                                        <div class="form__check form__check--has-info">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Traveller-Friendly</span>
+                                            </label>
+                                            <a href="#" class="filter__info" data-src="/info/1">
+                                                <i class="icomoon-information-solid"></i>
+                                            </a>
+                                        </div>
+                                        <div class="form__check form__check--has-info">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Pet-Friendly</span>
+                                            </label>
+                                            <a href="#" class="filter__info" data-src="/info/1">
+                                                <i class="icomoon-information-solid"></i>
+                                            </a>
+                                        </div>
+                                        <div class="form__check form__check--has-info">
+                                            <label>
+                                                <input type="checkbox">
+                                                <span>Easy Care</span>
+                                            </label>
+                                            <a href="#" class="filter__info" data-src="/info/2">
+                                                <i class="icomoon-information-solid"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="filter__control">
+                            <button type="button" class="filter__reset">Reset</button>
+                            <button type="button" class="filter__apply">Apply</button>
+                        </div>
+                    </aside>
+                    {{-- /filter --}}
+                
+                </div>
                 <div class="products__col-main">
 
                     {{--  list --}}
@@ -570,4 +755,21 @@
         </div>
 	</footer>
     {{-- /footer --}}
+
+
+    <div class="popup" id="popup">
+        <div class="popup__center">
+            <div class="lds-ellipsis popup__spinner">
+                <div></div><div></div><div></div><div></div>
+            </div>
+            
+            <button type="button" class="popup__close">
+                <i class="icomoon-close"></i>
+            </button>
+            
+            <div class="popup__window">
+                
+            </div>
+        </div>
+    </div>
 @endsection
