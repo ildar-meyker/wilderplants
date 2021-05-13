@@ -44,16 +44,18 @@
             position: relative;
             top: -10px;
             width: 33.33%;
-            max-width: 160px;
             text-align: center;
         }
 
         &.is-active {
             background: #fff;
 
-            .header__logo,
-            .nav-main--icons i {
+            .header__logo {
                 filter: invert(1)!important;
+            }
+
+            .nav-main--icons i {
+                color: #000;
             }
         }
     }
@@ -63,13 +65,40 @@
         max-height: 40px;
     }
 
-    &__h1 {
+    &__title-1 {
         flex-grow: 1;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         color: #fff;
+    }
+
+    &--fixed {
+        background: none;
+
+        &:before {
+            display: none;
+        }
+
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+            background: #000;
+        }
+
+        .header__inner {
+            height: auto;
+        }
+
+        .header__logo {
+            filter: invert(1);
+        }
+
+        .nav-main > li > a {
+            color: #000;
+        }
+
     }
 }
 
@@ -88,6 +117,8 @@
             &__center {
                 top: -20px;
                 width: 20%;
+                padding: 0 10px;
+                max-width: 180px;
             }
         }
 

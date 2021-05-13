@@ -19,20 +19,14 @@ const BurgerMenu = {
     },
 
     init() {
-        const self = this;
-
-        $(function () {
-
-            $(document).on('click', '#burger', self.toggle.bind(self));
+        $(document).on('click', '#burger', this.toggle.bind(this));
     
-            const mediaQuery = window.matchMedia('(min-width: 768px)');
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-            mediaQuery.addListener(function () {
-                if (mediaQuery.matches) {
-                    self.close();
-                }
-            })
-            
+        mediaQuery.addListener(() => {
+            if (mediaQuery.matches) {
+                this.close();
+            }
         });
     }
 };

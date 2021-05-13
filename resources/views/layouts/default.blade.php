@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/24f72e16b4/wilderplants/style.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/a961d9b6ea/wilderplants/style.css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>

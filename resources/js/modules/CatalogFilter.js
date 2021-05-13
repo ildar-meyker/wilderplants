@@ -50,46 +50,17 @@ const CatalogFilter = {
 
     },
 
-    showPopup(e) {
-        e.preventDefault();
-
-        const src = $(e.currentTarget).data('src');
-
-        $('#popup .popup__window').html("");
-        $('#popup').addClass('active loading');
-
-        $.get(src, function (data) {
-            $(data).imagesLoaded(function () {
-                $('#popup .popup__window').html(data);
-                $('#popup').removeClass('loading');
-            });
-        });        
-
-    },
-
-    hidePopup() {
-        $('#popup').removeClass('active');
-    },
-
     init() {
-        const self = this;
+        $(document).on('click', '.js-filter-open', this.openPanel.bind(this));
+        $(document).on('click', '.filter__close', this.closePanel.bind(this));
+        $(document).on('click', '.filter__header', this.toggleGroup.bind(this));
 
-        $(function () {
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-            $(document).on('click', '.js-filter-open', self.openPanel.bind(self));
-            $(document).on('click', '.filter__close', self.closePanel.bind(self));
-            $(document).on('click', '.filter__header', self.toggleGroup.bind(self));
-            $(document).on('click', '.filter__info', self.showPopup.bind(self));
-            $(document).on('click', '.popup__close', self.hidePopup.bind(self));
-
-            const mediaQuery = window.matchMedia('(min-width: 768px)');
-
-            mediaQuery.addListener(function () {
-                if (mediaQuery.matches) {
-                    self.closePanel();
-                }
-            })
-        
+        mediaQuery.addListener(() => {
+            if (mediaQuery.matches) {
+                this.closePanel();
+            }
         });
     }
 };

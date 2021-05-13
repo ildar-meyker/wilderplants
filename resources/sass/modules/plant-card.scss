@@ -1,0 +1,321 @@
+.plant-card {
+
+    &__right {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 13px;
+    }
+
+    &__item {
+        display: none;
+
+        &:first-child,
+        &.lslide {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    
+
+}
+
+@media (max-width: 767.98px) {
+
+    .plant-card {
+
+       
+
+        &__title-1,
+        &__title-2,
+        &__desc,
+        &__light,
+        &__buy {
+            display: none;
+        }
+
+        &__icons {
+            @include gradient-1;
+            margin: 0 -30px;
+            padding: 25px 0;
+            text-align: center; 
+            font-size: 0;
+
+            &__item {
+                display: inline-block;
+                margin: 0 8px;
+            }
+
+            img {
+                width: 35px;
+            }
+        }
+
+        &__tabs {
+            display: none;
+        }
+
+        &__save {
+            padding: 15px 0;
+            text-align: center;
+
+            &__title {
+                display: inline-block;
+                vertical-align: middle;
+                font-family: "Freight Display W01 Bold", serif;
+                font-size: 36px;
+            }
+
+            &__button {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 18px;
+                font-size: 24px;
+
+                &:hover {
+                    color: #f3c093;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+        
+
+        .lSPager {
+            margin-top: 15px !important;
+            text-align: center;
+            font-size: 0;
+
+            li {
+                float: none;
+                display: inline-block;
+                margin: 0 6px;
+                width: 10px !important;
+                height: 10px !important;
+                padding-left: 10px;
+                overflow: hidden;
+                background: #000;
+                border-radius: 50%;
+                opacity: .2;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .plant-card {
+        position: relative;
+        margin-top: 5px;
+
+        &:before {
+            @include gradient-1;
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 50%;
+            height: 200%;
+        }
+        
+        &__row {
+            position: relative;
+            display: flex;
+            margin: 0 -15px;
+        }
+
+        &__left,
+        &__right {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        
+
+        &__right {
+            display: block;
+            padding: 0 15px 60px 40px;
+        }
+
+        &__desc {
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        &__light {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+
+            &__icon {
+                width: 30px;
+            }
+
+            &__desc {
+                padding: 0 12px;
+                margin-right: -7px;
+            }
+
+        }
+
+        &__info {
+            padding: 7px;
+            line-height: 0;
+        }
+
+        &__buy {
+            margin-top: 50px;
+
+            button {
+                min-width: 160px;
+            }
+        }
+
+        &__save {
+            margin-top: 25px;
+
+            &__title {
+                display: none;
+            }
+
+            &__button {
+                font-size: 17px;
+                font-weight: 400;
+                letter-spacing: 1px;
+
+                i {
+                    vertical-align: text-bottom;
+                }
+                
+                &:hover {
+                    color: #F3C093;
+                }
+            }
+        }
+
+        &__title-2 {
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+     
+        &__icons {
+            display: flex;
+            margin-top: 30px;
+            font-family: "Calluna Sans", sans-serif;
+            text-align: center;
+
+            &__item {
+                margin-right: 30px;
+                opacity: 0.5;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+
+            &__image {
+                height: 45px;
+                line-height: 45px;
+
+                img {
+                    vertical-align: middle;
+                    width: 45px;
+                }
+            }
+
+            &__name {
+                margin-top: 15px;
+            }
+        }
+
+        &__tabs {
+            position: relative;
+            margin-top: 30px;
+
+            &__item {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                visibility: hidden;
+                opacity: 0;
+
+                &.active {
+                    transition: .3s all;
+                    position: static;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            &__title {
+                font-size: 17px;
+                font-weight: 400;
+            }
+
+            &__desc {
+                margin-top: 35px;
+                font-size: 17px;
+            }
+        }
+
+        .lSPager {
+            margin-top: 10px !important;
+            text-align: center;
+            font-size: 0;
+
+            li {
+                float: none;
+                display: inline-block;
+                border: 1px solid #B8B8B8;
+                width: 30px !important;
+                height: 30px !important;
+                border-radius: 0 !important;
+                margin: 0 5px;
+
+                &.active {
+                    border-color: #000;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .plant-card {
+
+        &__left {
+            padding: 0 40px;
+        }
+
+        &__buy {
+
+            button {
+                min-width: 220px;
+            }
+        }
+
+
+        .lSPager {
+            li {
+                width: 90px !important;
+                height: 90px !important;
+            }
+        }
+    }
+}

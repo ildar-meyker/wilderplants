@@ -1,5 +1,6 @@
 
 @import "destyle.css";
+@import "~lightslider/dist/css/lightslider.css";
 
 @import "./partials/fonts";
 @import "./partials/common";
@@ -12,15 +13,14 @@
 @import "./modules/footer";
 @import "./modules/form";
 @import "./modules/article";
-
 @import "./modules/choosing";
 @import "./modules/subscribe";
 @import "./modules/products";
 @import "./modules/filter";
 @import "./modules/popup";
-
 @import "./modules/nav-side";
 @import "./modules/nav-main";
 @import "./modules/nav-pager";
+@import "./modules/plant-card";
 
 

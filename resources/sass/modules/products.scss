@@ -57,12 +57,26 @@
                 opacity: 1;
             }
 
+            
+
             .products__like {
                 .icomoon-heart-o {
                     filter: invert(1)!important;
                     opacity: 1;
                 } 
             }
+
+            .products__icons i {
+                filter: invert(1)!important;
+            }
+
+            .products__name {
+                position: relative;
+                z-index: 10;
+                color: #fff;   
+            }
+
+
         }
 
     }
@@ -95,7 +109,7 @@
             color: #F3C093;
         }
 
-        &.is-active {
+        &.active {
             .icomoon-heart-o {
                 display: none;
             }
@@ -125,7 +139,7 @@
 
     &__name {
         text-transform: uppercase;
-        font-family: 'Calluna Sans W01 Regular', sans-serif;
+        font-family: 'Calluna Sans', sans-serif;
         font-size: 15px;
         font-weight: 400;
     }

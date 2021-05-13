@@ -60,7 +60,7 @@
                 </nav>
                 {{-- /topbar --}}
 
-                <h1 class="h1 header__h1">Shop plants</h1>
+                <h1 class="h1 header__title-1">Shop plants</h1>
             </div>
         </div>
 
@@ -294,7 +294,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/AGLA-PI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/AGLA-PI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA PINK</div>
@@ -303,8 +303,8 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
-                                <button type="button" class="products__like is-active">
+                                <a href="/catalog-item" class="products__link"></a>
+                                <button type="button" class="products__like active">
                                     <i class="icomoon-heart-o"></i>
                                     <i class="icomoon-heart"></i>
                                 </button>
@@ -314,7 +314,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/AGLA-SB1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/AGLA-SB1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA SILVER BAY</div>
@@ -323,7 +323,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -333,7 +333,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOC-AM1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOC-AM1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AIR PLANT</div>
@@ -341,7 +341,7 @@
                                         <i class="products__icon-moon"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -351,14 +351,14 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOC-OD1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOC-OD1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALBERTA SPRUCE</div>
                                     <div class="products__icons">
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -368,7 +368,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOE-HU1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOE-HU1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA CALIDORA</div>
@@ -376,7 +376,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -386,7 +386,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOE-VE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOE-VE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA POLLY</div>
@@ -394,7 +394,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -404,7 +404,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ANTH-AN1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ANTH-AN1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE HEDGEHOG</div>
@@ -412,7 +412,7 @@
                                         <i class="products__icon-plane"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -422,7 +422,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ASPA-SE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ASPA-SE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE VERA</div>
@@ -432,7 +432,7 @@
                                         <i class="products__icon-nasa"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -442,7 +442,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ASPL-NI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ASPL-NI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ANTHURIUM</div>
@@ -451,7 +451,7 @@
                                         <i class="products__icon-footprint"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -461,7 +461,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/AGLA-PI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/AGLA-PI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA PINK</div>
@@ -470,7 +470,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -480,7 +480,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/AGLA-SB1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/AGLA-SB1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA SILVER BAY</div>
@@ -489,7 +489,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -499,7 +499,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOC-AM1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOC-AM1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AIR PLANT</div>
@@ -507,7 +507,7 @@
                                         <i class="products__icon-moon"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -517,14 +517,14 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOC-OD1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOC-OD1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALBERTA SPRUCE</div>
                                     <div class="products__icons">
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -534,7 +534,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOE-HU1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOE-HU1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA CALIDORA</div>
@@ -542,7 +542,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -552,7 +552,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ALOE-VE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ALOE-VE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA POLLY</div>
@@ -560,7 +560,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -570,7 +570,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ANTH-AN1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ANTH-AN1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE HEDGEHOG</div>
@@ -578,7 +578,7 @@
                                         <i class="products__icon-plane"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -588,7 +588,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ASPA-SE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ASPA-SE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE VERA</div>
@@ -598,7 +598,7 @@
                                         <i class="products__icon-nasa"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -608,7 +608,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/catalog/ASPL-NI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/products/ASPL-NI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ANTHURIUM</div>
@@ -617,7 +617,7 @@
                                         <i class="products__icon-footprint"></i>
                                     </div>
                                 </div>
-                                <a href="#" class="products__link"></a>
+                                <a href="/catalog-item" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -646,130 +646,9 @@
 	</section>
     {{-- /products --}}
 
-
-	{{--  choosing --}}
-    <section class="choosing">
-        <div class="container">
-            <h2 class="h2 choosing__h1">Need help choosing your plants?</h2>
-            <h3 class="h4 choosing__h2">Let us guide you!</h3>
-
-            <div class="choosing__link">
-                <a href="#" class="button-link">
-                    Start now
-                </a>
-            </div>
-
-            <div class="choosing__list">
-                <div class="choosing__item">
-                    <div class="choosing__image">
-                        <img src="{{ asset('/img/svg-icons/icon-girl.svg') }}" alt="">
-                    </div>
-                    <div class="choosing__desc">
-                        Tell us about yourself and your place
-                    </div>
-                </div>
-                <div class="choosing__item">
-                    <div class="choosing__image">
-                        <img src="{{ asset('/img/svg-icons/icon-plants.svg') }}" alt="">
-                    </div>
-                    <div class="choosing__desc">
-                        Get your personalized plant collection
-                    </div>
-                </div>
-                <div class="choosing__item">
-                    <div class="choosing__image">
-                        <img src="{{ asset('/img/svg-icons/icon-paper.svg') }}" alt="">
-                    </div>
-                    <div class="choosing__desc">
-                        Learn simple care rituals for beautiful plants
-                    </div>
-                </div>
-            </div>
-        </div>
-	</section>
-    {{-- /choosing --}}
-
-	{{--  subscribe --}}
-    <section class="subscribe">
-        <div class="container">
-            <h2 class="h3 subscribe__h1">Be part of our plant-life addicts community</h2>
-
-            <form action="#" class="subscribe__form">
-                <input type="text" placeholder="ENTER YOUR EMAIL HERE" class="subscribe__input">
-                <button type="submit" class="subscribe__button">ОК</button>
-            </form>
-        </div>
-	</section>
-    {{-- /subscribe --}}
-
-	{{--  footer --}}
-    <footer class="footer">
-		<div class="container">
-            <div class="footer__menu">
-
-                <div class="footer__logo">
-                    <a href="#">
-                        <img src="{{ asset('/img/logo-dark.svg') }}" alt="">
-                    </a>
-                </div>
-            
-                <div class="footer__links">
-                    <div>WHY PLANTS</div>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Take A Quiz</a></li>
-                            <li><a href="#">Shop Plants</a></li>
-                            <li><a href="#">Why Plants</a></li>
-                            <li><a href="#">Plant Parenthood</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="footer__links">
-                    <div>WHY WILDER</div>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Books</a></li>
-                            <li><a href="#">About Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="footer__links footer__links--social">
-                    <div>CONNECT WITH US</div>
-                    <nav>
-                        <ul>
-                            <li><a href="#"><i class="icomoon-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="icomoon-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="icomoon-pinterest-p"></i> Pinterest</a></li>
-                            <li><a href="#"><i class="icomoon-envelope-o"></i> hello@wilderplants.com</a></li>
-                            <li><a href="#"><i class="icomoon-checkmark"></i> Feedback form</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-            <small>
-                2021 @ Wilder. All Rights Reserved
-            </small>
-        </div>
-	</footer>
-    {{-- /footer --}}
-
-
-    <div class="popup" id="popup">
-        <div class="popup__center">
-            <div class="lds-ellipsis popup__spinner">
-                <div></div><div></div><div></div><div></div>
-            </div>
-            
-            <button type="button" class="popup__close">
-                <i class="icomoon-close"></i>
-            </button>
-            
-            <div class="popup__window">
-                
-            </div>
-        </div>
-    </div>
+	@include('partials.choosing')
+    @include('partials.subscribe')
+	@include('partials.footer')
+    @include('partials.popup')
+    
 @endsection
