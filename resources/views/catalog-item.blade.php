@@ -287,7 +287,7 @@
     {{--  quote --}}
     <section class="quote">
         <div class="container">
-            <div class="quote__desc">
+            <div class="quote__text">
                 Aglaonemas belong to the Araceae, a family of flowering plants. Their flowers grow in clusters called inflorescence. While they rarely flower, you might find the females hiding at the bottom while the males grow higher up in between leaves.
             </div>
         </div>

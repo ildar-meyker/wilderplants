@@ -2508,3 +2508,27 @@ a:hover {
     height: 90px !important;
   }
 }
+.quote {
+  margin: 40px 0;
+  padding-top: 40px;
+  background: url("/img/quote/bg.png") no-repeat 50% 0;
+}
+.quote__text {
+  font-family: "Selina W08 Calligraphic";
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+@media (min-width: 768px) {
+  .quote {
+    background-size: 8% auto;
+    background-position: 50% 50%;
+    padding: 90px 0;
+    margin: 0;
+  }
+  .quote__text {
+    margin: 0 200px;
+    font-size: 22px;
+  }
+}
