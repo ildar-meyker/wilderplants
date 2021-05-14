@@ -1,0 +1,42 @@
+
+.select-size {
+    margin-top: 15px;
+    margin-bottom: 55px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__info {
+        vertical-align: text-bottom;
+        margin-left: 8px;
+    }
+
+    &__link {
+        display: none;
+    }
+
+    &__values {
+        margin-top: 30px;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 8px;
+            width: 60px;
+            height: 60px;
+            line-height: 55px;
+            background: #128663;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+
+        }
+    }
+
+
+}

@@ -1,0 +1,29 @@
+.care-card {
+    margin-bottom: 55px;
+    margin-top: 60px;
+
+    &__title-1 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__title-2 {
+        font-size: 19px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    &__link {
+        margin-left: 5px;
+    }
+
+    &__right {
+        margin-top: 30px;
+        text-align: center;
+
+        img {
+            width: 80%;
+        }
+    }
+
+}

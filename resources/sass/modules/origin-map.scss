@@ -1,0 +1,25 @@
+.origin-map {
+    margin-top: 45px;
+    margin-bottom: 15px;
+
+    &__title-1 {
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    &__title-2 {
+        margin-bottom: 17px;
+        font-family: "Selina W08 Calligraphic", sans-serif;
+        font-size: 22px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    &__image {
+        text-align: center;
+
+        img {
+            width: 70%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+
+.plant-story {
+
+    &__left {
+        text-align: center;
+
+        img {
+            width: 80%;
+        }
+   }
+
+    &__right {
+        margin-top: 15px;
+    }
+
+    &__text {
+        max-height: 1.68 * 9em;
+        overflow: hidden;
+    }
+
+    &__title-1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        margin-top: 30px;
+    }
+
+}

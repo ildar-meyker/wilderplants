@@ -900,7 +900,7 @@ template {
   unicode-range: U+0020-00FE;
 }
 @font-face {
-  font-family: "Freight Display W01 Bold";
+  font-family: "Freight Display Bold";
   src: url("/fonts/FreightDisplayW01-Bold.eot");
   src: url("/fonts/FreightDisplayW01-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/FreightDisplayW01-Bold.woff2") format("woff2"), url("/fonts/FreightDisplayW01-Bold.woff") format("woff"), url("/fonts/FreightDisplayW01-Bold.svg#FreightDisplayW01-Bold") format("svg");
   font-weight: 700;
@@ -946,7 +946,7 @@ body.locked {
 
 .button-link {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 0;
   font-family: "Brown", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -958,21 +958,51 @@ body.locked {
 .button-link--type-2 {
   letter-spacing: 2px;
 }
+.button-link--size-2 {
+  font-size: 17px;
+}
 .button-link:hover {
   color: #F3C093;
 }
 
+.button-border {
+  display: inline-block;
+  padding: 9px 0;
+  font-family: "Calluna Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 0 1px #000;
+  background: #fff;
+  color: #000;
+}
+.button-border--size-2 {
+  font-size: 17px;
+  padding: 14px 0;
+}
+.button-border:hover {
+  box-shadow: none;
+  background: #F3C093;
+  color: #000;
+}
+
 .button-filled {
   display: inline-block;
-  padding: 14px 20px;
+  padding: 9px 0;
   font-family: "Calluna Sans", sans-serif;
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
   background: #000;
   color: #fff;
+}
+.button-filled--size-2 {
+  font-size: 17px;
+  padding: 14px 0;
 }
 .button-filled:hover {
   background: #F3C093;
@@ -990,20 +1020,26 @@ body.locked {
 }
 
 .h1 {
-  font-family: "Freight Display W01 Bold", sans-serif;
+  font-family: "Freight Display Bold", serif;
   font-size: 54px;
 }
 
 .h2 {
-  font-family: "Freight Display W01 Bold", sans-serif;
+  font-family: "Freight Display Bold", serif;
   font-size: 40px;
-  line-height: 1.13;
+  line-height: 1.15;
+}
+
+.h2-a {
+  font-family: "Freight Display Bold", serif;
+  font-size: 36px;
+  line-height: 1.25;
 }
 
 .h3 {
-  font-family: "Freight Display W01 Bold", sans-serif;
+  font-family: "Freight Display Bold", serif;
   font-size: 32px;
-  line-height: 1.06;
+  line-height: 1.1;
 }
 
 .h4 {
@@ -1011,8 +1047,17 @@ body.locked {
   font-size: 28px;
 }
 
+.h5 {
+  font-family: "Selina W08 Calligraphic", sans-serif;
+  font-size: 20px;
+}
+
 a, button {
   transition: 0.3s all;
+}
+
+img {
+  max-width: 100%;
 }
 
 a:hover {
@@ -1423,11 +1468,11 @@ a:hover {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.33;
+  line-height: 1.35;
 }
 .footer__links li {
   margin-top: 12px;
-  line-height: 1.77;
+  line-height: 1.8;
 }
 .footer__links--social {
   white-space: nowrap;
@@ -1491,26 +1536,33 @@ a:hover {
   padding-right: 30px;
 }
 
+.article {
+  font-size: 19px;
+}
 .article h3 {
   margin-bottom: 27px;
   font-family: "Selina W08 Calligraphic", sans-serif;
   font-size: 25px;
-  line-height: 1.26;
+  line-height: 1.3;
 }
 .article h4 {
   margin-bottom: 23px;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.87;
+  line-height: 1.9;
 }
 .article p {
   margin: 20px 0;
-  font-size: 19px;
-  line-height: 1.68;
+  line-height: 1.7;
 }
 .article img {
   margin: 20px 0;
-  max-width: 100%;
+}
+.article *:first-child {
+  margin-top: 0;
+}
+.article *:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -1703,7 +1755,6 @@ a:hover {
   text-align: center;
 }
 .products__image img {
-  max-width: 100%;
   max-height: 100%;
 }
 .products__footer {
@@ -2284,9 +2335,6 @@ a:hover {
 .plant-card__item:first-child, .plant-card__item.lslide {
   display: block;
 }
-.plant-card__item img {
-  max-width: 100%;
-}
 
 @media (max-width: 767.98px) {
   .plant-card__title-1, .plant-card__title-2, .plant-card__desc, .plant-card__light, .plant-card__buy {
@@ -2316,7 +2364,7 @@ a:hover {
   .plant-card__save__title {
     display: inline-block;
     vertical-align: middle;
-    font-family: "Freight Display W01 Bold", serif;
+    font-family: "Freight Display Bold", serif;
     font-size: 36px;
   }
   .plant-card__save__button {
@@ -2508,8 +2556,150 @@ a:hover {
     height: 90px !important;
   }
 }
+.plant-story__left {
+  text-align: center;
+}
+.plant-story__left img {
+  width: 80%;
+}
+.plant-story__right {
+  margin-top: 15px;
+}
+.plant-story__text {
+  max-height: 15.12em;
+  overflow: hidden;
+}
+.plant-story__title-1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plant-story__link {
+  margin-top: 30px;
+}
+
+.plant-types__title-1 {
+  margin-bottom: 22px;
+  text-align: center;
+}
+.plant-types__title-2 {
+  font-family: "Selina W08 Calligraphic", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+.plant-types__list {
+  margin: 55px -30px 0 -30px;
+  display: flex;
+}
+.plant-types__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 40px;
+}
+.plant-types__image {
+  display: block;
+  background: #f9f9f9;
+}
+.plant-types__name {
+  display: block;
+  margin-top: 10px;
+  font-family: "Calluna Sans", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plant-pots__title-1 {
+  margin-bottom: 45px;
+  text-align: center;
+}
+.plant-pots__right {
+  margin-top: 60px;
+}
+.plant-pots__large__name {
+  margin-top: 15px;
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.plant-pots__large__price {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Calluna Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.plant-pots__large__button {
+  display: block;
+  margin-top: 13px;
+  width: 100%;
+}
+.plant-pots__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -5px 0 -5px;
+}
+.plant-pots__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 5px;
+  margin-top: 20px;
+}
+
+.origin-map {
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+.origin-map__title-1 {
+  margin-bottom: 22px;
+  text-align: center;
+}
+.origin-map__title-2 {
+  margin-bottom: 17px;
+  font-family: "Selina W08 Calligraphic", sans-serif;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+}
+.origin-map__image {
+  text-align: center;
+}
+.origin-map__image img {
+  width: 70%;
+}
+
+.care-card {
+  margin-bottom: 55px;
+  margin-top: 60px;
+}
+.care-card__title-1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.care-card__title-2 {
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: center;
+}
+.care-card__link {
+  margin-left: 5px;
+}
+.care-card__right {
+  margin-top: 30px;
+  text-align: center;
+}
+.care-card__right img {
+  width: 80%;
+}
+
 .quote {
-  margin: 40px 0;
+  margin: 30px 0;
   padding-top: 40px;
   background: url("/img/quote/bg.png") no-repeat 50% 0;
 }
@@ -2531,4 +2721,176 @@ a:hover {
     margin: 0 200px;
     font-size: 22px;
   }
+}
+.try-this {
+  margin-bottom: 20px;
+}
+.try-this__title-1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.try-this__title-2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.try-this__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -5px 0 -5px;
+}
+.try-this__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+.try-this__name {
+  margin-top: 10px;
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.try-this__price {
+  text-align: center;
+  font-family: "Calluna Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.try-this__button {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.less-more__crop {
+  transition: 0.3s all;
+}
+.less-more__button span:last-child {
+  display: none;
+}
+.less-more__button.active span {
+  display: none;
+}
+.less-more__button.active span:last-child {
+  display: block;
+}
+
+.amazon {
+  display: none;
+}
+
+.amazon-sm__body {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 50px auto;
+}
+.amazon-sm__image {
+  flex: 0 0 50px;
+}
+.amazon-sm__text {
+  padding-left: 15px;
+  font-family: "Calluna Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.light-sm {
+  position: relative;
+  padding: 35px 0;
+  background: linear-gradient(90deg, #F9E53421 0%, #FFB16926 100%);
+}
+.light-sm__title-1 {
+  margin-top: -10px;
+  font-family: "Selina W08 Calligraphic", sans-serif;
+  font-size: 30px;
+  line-height: 1.3;
+}
+.light-sm__title-2 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+.light-sm__link {
+  font-family: "Selina W08 Calligraphic", sans-serif;
+  font-size: 19px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.light-sm__image {
+  width: 120px;
+  position: absolute;
+  top: -42px;
+  right: 0;
+}
+
+.powers-sm {
+  background: #fff linear-gradient(229.74deg, rgba(255, 117, 195, 0.07) 0%, rgba(255, 166, 71, 0.07) 20%, rgba(255, 232, 63, 0.07) 40%, rgba(159, 255, 91, 0.07) 60%, rgba(112, 226, 255, 0.07) 80%, rgba(205, 147, 255, 0.07) 100%);
+  padding: 45px 0;
+}
+.powers-sm__title-1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.powers-sm__list {
+  margin-bottom: -15px;
+}
+.powers-sm__item {
+  display: flex;
+  margin-top: 35px;
+}
+.powers-sm__image {
+  flex: 0 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.powers-sm__image img {
+  width: 50px;
+}
+.powers-sm__text {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.select-size {
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+.select-size__title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.select-size__info {
+  vertical-align: text-bottom;
+  margin-left: 8px;
+}
+.select-size__link {
+  display: none;
+}
+.select-size__values {
+  margin-top: 30px;
+  text-align: center;
+}
+.select-size__values li {
+  display: inline-block;
+  margin: 0 8px;
+  width: 60px;
+  height: 60px;
+  line-height: 55px;
+  background: #128663;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
 }

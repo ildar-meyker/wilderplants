@@ -6,6 +6,7 @@ import CatalogFilter from "./modules/CatalogFilter";
 import CustomForm from "./modules/CustomForm";
 import SuperPowers from "./modules/SuperPowers";
 import InfoPopup from "./modules/InfoPopup";
+import LessMore from "./modules/LessMore";
 
 $(function () {
 
@@ -14,6 +15,7 @@ $(function () {
     CustomForm.init();
     SuperPowers.init();
     InfoPopup.init();
+    LessMore.init();
 
     $('#photos-slider').lightSlider({
         gallery: true,
@@ -23,26 +25,19 @@ $(function () {
         thumbItem: 3
     });
 
-    $('#types-slider').lightSlider({
-        item: 2,
-        loop: false,
-        slideMove: 2,
-        responsive : [
-            {
-                breakpoint: 800,
-                settings: {
-                    item: 2,
-                    slideMove: 2,
-                  }
-            }
-        ]
-    }); 
+    // $('#types-slider').lightSlider({
+    //     item: 2,
+    //     loop: false,
+    //     slideMove: 2,
+    //     slideMargin: 0,
+    //     pager: true
+    // }); 
 
-    $('#more-slider').lightSlider({
-        item: 4,
-        loop: false,
-        slideMove: 4,
-    }); 
+    // $('#more-slider').lightSlider({
+    //     item: 4,
+    //     loop: false,
+    //     slideMove: 4,
+    // }); 
 
 
     

@@ -1,0 +1,29 @@
+
+.less-more {
+    
+    &__crop {
+        transition: .3s all;
+    }
+
+    &__button {
+
+        span {
+            &:last-child {
+                display: none;
+            }
+        }
+
+        &.active {
+            span {
+                display: none;
+
+                &:last-child {
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+
+}

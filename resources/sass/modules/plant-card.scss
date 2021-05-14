@@ -13,10 +13,6 @@
         &.lslide {
             display: block;
         }
-
-        img {
-            max-width: 100%;
-        }
     }
 
     
@@ -65,7 +61,7 @@
             &__title {
                 display: inline-block;
                 vertical-align: middle;
-                font-family: "Freight Display W01 Bold", serif;
+                font-family: "Freight Display Bold", serif;
                 font-size: 36px;
             }
 

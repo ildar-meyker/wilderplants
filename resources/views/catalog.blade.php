@@ -129,7 +129,7 @@
                                     <div class="filter__title">
                                         WINDOW DIRECTION
                                     </div>
-                                    <a href="#" class="filter__info filter__info--for-header" data-src="/info/1">
+                                    <a href="#" class="filter__info filter__info--for-header js-open-info" data-src="/html/info/1">
                                         <i class="icomoon-information-solid"></i>
                                     </a>
                                 </div>
@@ -242,7 +242,7 @@
                                                 <input type="checkbox">
                                                 <span>Air-Purifying</span>
                                             </label>
-                                            <a href="#" class="filter__info" data-src="/info/2">
+                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/2">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -251,7 +251,7 @@
                                                 <input type="checkbox">
                                                 <span>Traveller-Friendly</span>
                                             </label>
-                                            <a href="#" class="filter__info" data-src="/info/1">
+                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/1">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -260,7 +260,7 @@
                                                 <input type="checkbox">
                                                 <span>Pet-Friendly</span>
                                             </label>
-                                            <a href="#" class="filter__info" data-src="/info/1">
+                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/1">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -269,7 +269,7 @@
                                                 <input type="checkbox">
                                                 <span>Easy Care</span>
                                             </label>
-                                            <a href="#" class="filter__info" data-src="/info/2">
+                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/2">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -303,7 +303,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like active">
                                     <i class="icomoon-heart-o"></i>
                                     <i class="icomoon-heart"></i>
@@ -323,7 +323,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -341,7 +341,7 @@
                                         <i class="products__icon-moon"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -358,7 +358,7 @@
                                     <div class="products__icons">
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -376,7 +376,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -394,7 +394,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -412,7 +412,7 @@
                                         <i class="products__icon-plane"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -432,7 +432,7 @@
                                         <i class="products__icon-nasa"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -451,7 +451,7 @@
                                         <i class="products__icon-footprint"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -470,7 +470,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -489,7 +489,7 @@
                                         <i class="products__icon-glasses"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -507,7 +507,7 @@
                                         <i class="products__icon-moon"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -524,7 +524,7 @@
                                     <div class="products__icons">
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -542,7 +542,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -560,7 +560,7 @@
                                         <i class="products__icon-air"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -578,7 +578,7 @@
                                         <i class="products__icon-plane"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -598,7 +598,7 @@
                                         <i class="products__icon-nasa"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>
@@ -617,7 +617,7 @@
                                         <i class="products__icon-footprint"></i>
                                     </div>
                                 </div>
-                                <a href="/catalog-item" class="products__link"></a>
+                                <a href="/product" class="products__link"></a>
                                 <button type="button" class="products__like">
                                     <i class="icomoon-heart-o"></i>
                                 </button>

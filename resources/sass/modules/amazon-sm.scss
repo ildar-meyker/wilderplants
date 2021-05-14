@@ -1,0 +1,22 @@
+.amazon-sm {
+
+    &__body {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        margin: 50px auto;
+    }
+
+    &__image {
+        flex: 0 0 50px;
+    }
+
+    &__text {
+        padding-left: 15px;
+        font-family: "Calluna Sans", sans-serif;
+        line-height: 1.5;
+    }
+
+
+
+}

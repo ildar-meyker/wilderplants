@@ -17,18 +17,18 @@ Route::get('/', function () {
     return view('catalog');
 });
 
-Route::get('/catalog-item', function () {
-    return view('catalog-item');
+Route::get('/product', function () {
+    return view('product');
 });
 
-Route::get('/info/1', function () {
+Route::get('/html/info/1', function () {
     return view('info.1');
 });
 
-Route::get('/info/2', function () {
+Route::get('/html/info/2', function () {
     return view('info.2');
 });
 
-Route::get('/info/light', function () {
+Route::get('/html/info/light', function () {
     return view('info.light');
 });

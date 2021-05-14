@@ -25,7 +25,7 @@ const InfoPopup = {
     },
 
     init() {
-        $(document).on('click', '.filter__info, .plant-card__info', this.showPopup.bind(this));
+        $(document).on('click', '.js-open-info', this.showPopup.bind(this));
         $(document).on('click', '.popup__close', this.hidePopup.bind(this));
     }
 };

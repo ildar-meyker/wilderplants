@@ -106,7 +106,7 @@
                 </div>
             
                 <div class="plant-card__right">
-                    <h2 class="h2 plant-card__title-1">Alocasia Polly</h2>
+                    <h2 class="h2-a plant-card__title-1">Alocasia Polly</h2>
                     
                     <div class="plant-card__desc">
                         <strong>Botanical name:</strong> Alocasia Amazonica <br>
@@ -116,7 +116,7 @@
                     <div class="plant-card__light">
                         <img src="/img/svg-icons/sun.svg" class="plant-card__light__icon">
                         <span class="plant-card__light__desc">Light: Bright Indirect</span>
-                        <a href="#" class="plant-card__info" data-src="/info/light">
+                        <a href="#" class="plant-card__info js-open-info" data-src="/html/info/light">
                             <i class="icomoon-information-solid"></i>
                         </a>
                     </div>
@@ -185,12 +185,21 @@
     {{--  select-size --}}
     <section class="select-size">
         <div class="container">
-            <div class="select-size__text">
-                <div class="select-size__value">4"</div>
+            <div class="select-size__body">
                 <div class="select-size__desc">
-                    <div class="select-size__title">SELECT YOUR SIZE</div>
+                    <div class="select-size__title">
+                        <span>SELECT YOUR SIZE</span>
+                        <a href="#" 
+                            class="select-size__info js-open-info" 
+                            data-src="/html/info/1">
+                            <i class="icomoon-information-solid"></i>
+                        </a>
+                    </div>
                     <a href="#" class="select-size__link">Size guide</a>
                 </div>
+                <ul class="select-size__values">
+                    <li>4"</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -199,20 +208,20 @@
     {{--  plant-pots --}}
     <section class="plant-pots">
         <div class="container">
-            <h2 class="h2 plant-pots__title-1">4" Plants & Pots</h2>
+            <h2 class="h2-a plant-pots__title-1">4" Plants & Pots</h2>
             <div class="plant-pots__row">
                 <div class="plant-pots__left">
 
-                    <div class="plant-pots__item plant-pots__item--large">
-                        <div class="try-this__image">
+                    <div class="plant-pots__large">
+                        <div class="plant-pots__large__image">
                             <img src="/img/plant-pots/5.jpeg" alt="">
                         </div>
-                        <div class="try-this__name">American Plant Exchange Aglaonema Chinese Evergreen Hot Pink Valentine Wishes Live Plant, 4" Pot, Indoor/Outdoor Air Purifier</div>
-                        <div class="try-this__price">$21.99</div>
-                        <button type="button" class="button-border try-this__button">
+                        <div class="plant-pots__large__name">American Plant Exchange Aglaonema Chinese Evergreen Hot Pink Valentine Wishes Live Plant, 4" Pot, Indoor/Outdoor Air Purifier</div>
+                        <div class="plant-pots__large__price">$21.99</div>
+                        <button type="button" class="button-border button-border--size-2 plant-pots__large__button">
                             Quick view
                         </button>
-                        <button type="button" class="button-filled try-this__button">
+                        <button type="button" class="button-filled button-filled--size-2 plant-pots__large__button">
                             Add to cart
                         </button>
                     </div>
@@ -284,6 +293,60 @@
     </section>
     {{-- /plant-pots --}}
 
+    {{--  amazon-sm --}}
+    <section class="amazon-sm">
+        <div class="container">
+            <div class="amazon-sm__body">
+                <div class="amazon-sm__image">
+                    <img src="/img/amazon/logo.png" alt="">
+                </div>
+                <div class="amazon-sm__text">
+                    As an Amazon Associate I earn from qualifying purchases.
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- /amazon-sm --}}
+
+    {{--  light-sm --}}
+    <section class="light-sm">
+        <div class="container">
+            <div class="light-sm__title-1">Light</div>
+            <div class="light-sm__title-2">LOW TO BRIGHT INDIRECT</div>
+            <a href="#" class="light-sm__link js-open-info" data-src="/html/info/light">Light Guide</a>
+            <img src="/img/svg-icons/light.svg" alt="" class="light-sm__image">
+        </div>
+    </section>
+    {{-- /light-sm --}}
+
+    {{--  powers-sm --}}
+    <section class="powers-sm">
+        <div class="container">
+            <h2 class="powers-sm__title-1">BOTANICAL SUPER POWERS</h2>
+            <div class="powers-sm__list">
+                <div class="powers-sm__item">
+                    <div class="powers-sm__image">
+                        <img src="/img/svg-icons/glasses.svg" alt="">
+                    </div>
+                    <div class="powers-sm__text">
+                        <strong>Low light tolerant</strong>
+                        <br>This plant feels good even in dimly lit rooms.
+                    </div>
+                </div>
+                <div class="powers-sm__item">
+                    <div class="powers-sm__image">
+                        <img src="/img/svg-icons/air.svg" alt="">
+                    </div>
+                    <div class="powers-sm__text">
+                        <strong>Air-purifying</strong>
+                        <br>This plant cleans the air from toxins and VOCs like a pro.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- /powers-sm --}}
+
     {{--  quote --}}
     <section class="quote">
         <div class="container">
@@ -303,12 +366,19 @@
                         <img src="/img/plant-story/1.webp" alt="">
                     </div>
                 </div>
-                <div class="plant-story__right">
-                    <h2 class="h2 plant-story__title-1">Plant Story</h2>
-                    <div class="plant-story__desc">
-                        The Aglaonema’s foliage represents nature, purity, and positive energy, and is considered around Asia as the ‘happy plant.’ According to Feng Shui traditions (the Chinese way to bring harmony to your home), this plant brings the healing properties of ‘forest bathing’ into your living space. It is said that its leaves bring good energy, making this lovely plant a source of joy and calm. Commonly known as the Chinese Evergreen, the Aglaonema genus comes in different colours. The Aglaonema Pink has light green and pink leaves.
+                <div class="plant-story__right less-more">
+                    <h2 class="h2-a plant-story__title-1">Plant Story</h2>
+                    <div class="article less-more__crop plant-story__text">
+                        <div class="less-more__ruler">
+                            <p>
+                                The Aglaonema’s foliage represents nature, purity, and positive energy, and is considered around Asia as the ‘happy plant.’ According to Feng Shui traditions (the Chinese way to bring harmony to your home), this plant brings the healing properties of ‘forest bathing’ into your living space. It is said that its leaves bring good energy, making this lovely plant a source of joy and calm. Commonly known as the Chinese Evergreen, the Aglaonema genus comes in different colours. The Aglaonema Pink has light green and pink leaves.
+                            </p>
+                        </div>
                     </div>
-                    <a href="#" class="plant-story__link">READ MORE</a>
+                    <a href="#" class="button-link button-link--size-2 plant-story__link less-more__button">
+                        <span>Read more</span>
+                        <span>Read less</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -318,8 +388,8 @@
     {{--  origin-map --}}
     <section class="origin-map">
         <div class="container">
-            <h2 class="h2 origin-map__title-1">Place of origin</h2>
-            <h3 class="h5 origin-map__title-2">Tropical and subtropical regions of Asia and New Guinea</h3>
+            <h2 class="h2-a origin-map__title-1">Place of origin</h2>
+            <h3 class="origin-map__title-2">Tropical and subtropical regions of Asia and New Guinea</h3>
             <div class="origin-map__image">
                 <img src="/img/origin-map/1.webp" alt="">
             </div>
@@ -330,20 +400,20 @@
     {{--  plant-types --}}
     <section class="plant-types">
         <div class="container">
-            <h2 class="h2 plant-types__title-1">Aglaonema</h2>
+            <h2 class="h2-a plant-types__title-1">Aglaonema</h2>
             <h3 class="h5 plant-types__title-2">This plant comes in different varieties.</h3>
             <ul class="plant-types__list" id="types-slider">
                 <li class="plant-types__item">
-                    <div class="plant-types__image">
+                    <a href="#" class="plant-types__image">
                         <img src="/img/plant-types/1.webp" alt="">
-                    </div>
-                    <div class="plant-types__name">Red aglaonema</div>
+                    </a>
+                    <a href="#" class="plant-types__name">Red aglaonema</a>
                 </li>
                 <li class="plant-types__item">
-                    <div class="plant-types__image">
+                    <a href="#" class="plant-types__image">
                         <img src="/img/plant-types/2.webp" alt="">
-                    </div>
-                    <div class="plant-types__name">Aglaonema Silver Bay</div>
+                    </a>
+                    <a href="#" class="plant-types__name">Aglaonema Silver Bay</a>
                 </li>
             </ul>
         </div>
@@ -354,13 +424,13 @@
     <section class="care-card">
         <div class="container">
             <div class="care-card__row">
-                <div class="care-card__col-left">
-                    <h2 class="h2 care-card__title-1">Care for your Aglaonema Pink Like a Pro!</h2>
-                    <div class="care-card__desc">
-                        Check out it's personal <a href="#" class="care-card__link">CARE CARD</a>
-                    </div>
+                <div class="care-card__left">
+                    <h2 class="h2-a care-card__title-1">Care for your Aglaonema Pink Like a Pro!</h2>
+                    <h3 class="care-card__title-2">
+                        Check out it's personal <a href="#" class="button-link care-card__link">CARE CARD</a>
+                    </h3>
                 </div>
-                <div class="care-card__col-right">
+                <div class="care-card__right">
                     <img src="/img/care-card/carecard.webp" alt="">
                 </div>
             </div>
@@ -371,9 +441,9 @@
     {{--  try-this --}}
     <section class="try-this">
         <div class="container">
-            <h2 class="h2 try-this__title-1">Accessories</h2>
+            <h2 class="h2-a try-this__title-1">Accessories</h2>
        
-            <h3 class="h5 try-this__title-2"></h3>
+            <h3 class="h5 try-this__title-2">Houseplant starter kit</h3>
        
             <ul class="try-this__list" id="more-slider">
 
@@ -421,7 +491,7 @@
 
                 <li class="try-this__item">
                     <div class="try-this__image">
-                        <img src="/img/try-this/3.jpg" alt="">
+                        <img src="/img/try-this/4.jpg" alt="">
                     </div>
                     <div class="try-this__name">IPPINKA Sustee Aquameter, Plaint Moisture Sensor Set of 2 (Green, Medium)</div>
                     <div class="try-this__price">$14.95</div>
@@ -436,8 +506,6 @@
             </ul>
         </div>
     </section>
-    
-    Houseplant starter kit
     {{-- /try-this --}}
 
 

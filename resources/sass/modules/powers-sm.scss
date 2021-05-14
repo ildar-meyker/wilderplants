@@ -1,0 +1,38 @@
+.powers-sm {
+    @include gradient-1;
+    padding: 45px 0;
+
+    &__title-1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-bottom: -15px;
+    }
+
+    &__item {
+        display: flex;
+        margin-top: 35px;
+    }
+
+    &__image {
+        flex: 0 0 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    &__text {
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+}
