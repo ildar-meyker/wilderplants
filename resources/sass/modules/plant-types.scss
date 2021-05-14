@@ -41,3 +41,22 @@
 
 
 }
+
+@media (min-width: 768px) {
+
+    .plant-types {
+
+        &__list {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        &__item {
+            flex: 0 0 32%;
+            max-width: 32%;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+
+}

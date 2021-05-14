@@ -40,3 +40,47 @@
 
 
 }
+
+@media (min-width: 768px) {
+
+    .select-size {
+
+        &__body {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__desc {
+            padding-left: 15px;
+        }
+
+        &__title {
+            margin-bottom: 7px;
+            font-size: 18px;
+        }
+
+        &__info {
+            display: none;
+        }
+        
+        &__link {
+            display: inline;
+            font-family: "Selina W08 Calligraphic", sans-serif;
+            font-size: 18px;
+        }
+
+        &__values {
+            margin: 0;
+
+            li {
+                width: 43px;
+                height: 43px;
+                line-height: 40px;
+                margin-right: 0;
+                margin-left: 16px;
+            }
+        }
+    }
+}

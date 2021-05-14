@@ -27,3 +27,58 @@
     }
 
 }
+
+@media (min-width: 768px) {
+
+    .care-card {
+        margin: 115px 0;
+
+        &__row {
+            display: flex;
+            margin: 0 85px;
+        }
+
+        &__title-1,
+        &__title-2 {
+            text-align: left;
+        }
+
+        &__left {
+            flex: 0 0 45%;
+            max-width: 45%;
+        }
+
+        &__right {
+            flex: 0 0 55%;
+            max-width: 55%;
+            text-align: right;
+
+            img {
+                width: 75%;
+            }
+        }
+
+        
+
+        &__link {
+            margin-left: 0;
+        }
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .care-card {
+
+        &__row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &__left {
+            align-self: center;
+        }
+    }
+} 

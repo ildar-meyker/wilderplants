@@ -1065,6 +1065,14 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .button-filled {
+    font-size: 16px;
+  }
+
+  .button-border {
+    font-size: 16px;
+  }
+
   .container {
     padding: 0 15px;
   }
@@ -1073,8 +1081,17 @@ a:hover {
     font-size: 46px;
   }
 
+  .h2-a {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+
   .h3 {
     font-size: 36px;
+  }
+
+  .h5 {
+    font-size: 22px;
   }
 }
 @media (min-width: 1200px) {
@@ -1437,7 +1454,6 @@ a:hover {
     margin: 0 -15px;
   }
   .header__topbar__center {
-    top: -20px;
     width: 20%;
     padding: 0 10px;
     max-width: 180px;
@@ -1451,7 +1467,10 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .header__topbar {
-    padding-top: 40px;
+    padding-top: 35px;
+  }
+  .header__topbar__center {
+    top: -20px;
   }
 }
 .footer {
@@ -2423,6 +2442,9 @@ a:hover {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .plant-card__left {
+    margin-top: 20px;
+  }
   .plant-card__right {
     display: block;
     padding: 0 15px 60px 40px;
@@ -2450,8 +2472,9 @@ a:hover {
   .plant-card__buy {
     margin-top: 50px;
   }
-  .plant-card__buy button {
-    min-width: 160px;
+  .plant-card__buy__button {
+    font-size: 19px;
+    min-width: 35%;
   }
   .plant-card__save {
     margin-top: 25px;
@@ -2545,15 +2568,14 @@ a:hover {
   }
 }
 @media (min-width: 1024px) {
-  .plant-card__left {
-    padding: 0 40px;
-  }
-  .plant-card__buy button {
-    min-width: 220px;
-  }
   .plant-card .lSPager li {
     width: 90px !important;
     height: 90px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .plant-card__left {
+    padding: 0 40px;
   }
 }
 .plant-story__left {
@@ -2566,7 +2588,7 @@ a:hover {
   margin-top: 15px;
 }
 .plant-story__text {
-  max-height: 15.12em;
+  max-height: 15.9em;
   overflow: hidden;
 }
 .plant-story__title-1 {
@@ -2577,6 +2599,29 @@ a:hover {
   margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .plant-story__title-1 {
+    text-align: left;
+  }
+  .plant-story__row {
+    display: flex;
+    margin: 0 -15px;
+  }
+  .plant-story__left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+  }
+  .plant-story__right {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 0;
+    padding: 0 40px;
+  }
+  .plant-story__image img {
+    width: auto;
+  }
+}
 .plant-types__title-1 {
   margin-bottom: 22px;
   text-align: center;
@@ -2610,6 +2655,18 @@ a:hover {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .plant-types__list {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .plant-types__item {
+    flex: 0 0 32%;
+    max-width: 32%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 .plant-pots__title-1 {
   margin-bottom: 45px;
   text-align: center;
@@ -2617,8 +2674,18 @@ a:hover {
 .plant-pots__right {
   margin-top: 60px;
 }
+.plant-pots__large {
+  text-align: center;
+}
+.plant-pots__large__image {
+  margin: 0 -30px;
+}
+.plant-pots__large__image img {
+  width: 75%;
+}
 .plant-pots__large__name {
-  margin-top: 15px;
+  max-width: 340px;
+  margin: 15px auto 0 auto;
   max-height: 3em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2629,7 +2696,6 @@ a:hover {
 .plant-pots__large__price {
   margin-top: 10px;
   margin-bottom: 20px;
-  text-align: center;
   font-family: "Calluna Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -2637,13 +2703,14 @@ a:hover {
 }
 .plant-pots__large__button {
   display: block;
-  margin-top: 13px;
   width: 100%;
+  max-width: 340px;
+  margin: 13px auto 0 auto;
 }
 .plant-pots__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -20px -5px 0 -5px;
+  margin: -20px -30px 0 -30px;
 }
 .plant-pots__item {
   flex: 0 0 50%;
@@ -2652,6 +2719,36 @@ a:hover {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .plant-pots__title-1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .plant-pots__row {
+    display: flex;
+  }
+  .plant-pots__left, .plant-pots__right {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .plant-pots__right {
+    margin-top: 0;
+  }
+  .plant-pots__large {
+    margin-top: 25px;
+    padding: 15px;
+  }
+  .plant-pots__large__image {
+    margin: 0;
+  }
+  .plant-pots__large__image img {
+    width: 90%;
+  }
+  .plant-pots__list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .origin-map {
   margin-top: 45px;
   margin-bottom: 15px;
@@ -2661,7 +2758,7 @@ a:hover {
   text-align: center;
 }
 .origin-map__title-2 {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   font-family: "Selina W08 Calligraphic", sans-serif;
   font-size: 22px;
   line-height: 1.4;
@@ -2674,6 +2771,14 @@ a:hover {
   width: 70%;
 }
 
+@media (min-width: 768px) {
+  .origin-map {
+    margin-bottom: 45px;
+  }
+  .origin-map__image img {
+    width: 55%;
+  }
+}
 .care-card {
   margin-bottom: 55px;
   margin-top: 60px;
@@ -2698,6 +2803,42 @@ a:hover {
   width: 80%;
 }
 
+@media (min-width: 768px) {
+  .care-card {
+    margin: 115px 0;
+  }
+  .care-card__row {
+    display: flex;
+    margin: 0 85px;
+  }
+  .care-card__title-1, .care-card__title-2 {
+    text-align: left;
+  }
+  .care-card__left {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .care-card__right {
+    flex: 0 0 55%;
+    max-width: 55%;
+    text-align: right;
+  }
+  .care-card__right img {
+    width: 75%;
+  }
+  .care-card__link {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .care-card__row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .care-card__left {
+    align-self: center;
+  }
+}
 .quote {
   margin: 30px 0;
   padding-top: 40px;
@@ -2718,7 +2859,7 @@ a:hover {
     margin: 0;
   }
   .quote__text {
-    margin: 0 200px;
+    margin: 0 185px;
     font-size: 22px;
   }
 }
@@ -2726,7 +2867,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .try-this__title-1 {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   text-align: center;
 }
 .try-this__title-2 {
@@ -2736,13 +2877,24 @@ a:hover {
 .try-this__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -20px -5px 0 -5px;
+  margin: -20px -30px 0 -30px;
 }
 .try-this__item {
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 20px;
   padding: 0 5px;
+}
+.try-this__image {
+  text-align: center;
+}
+.try-this__image img {
+  width: 80%;
+}
+.try-this__desc {
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
 }
 .try-this__name {
   margin-top: 10px;
@@ -2753,7 +2905,6 @@ a:hover {
   line-height: 1.5;
 }
 .try-this__price {
-  text-align: center;
   font-family: "Calluna Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -2765,6 +2916,31 @@ a:hover {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .try-this {
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+  .try-this__title-1 {
+    margin-bottom: 22px;
+  }
+  .try-this__title-2 {
+    margin-bottom: 55px;
+  }
+  .try-this__list {
+    margin: 0 -15px;
+    flex-wrap: nowrap;
+  }
+  .try-this__item {
+    flex: 0 0 332px;
+    max-width: 332px;
+    margin: 0;
+    padding: 0 32px 0 0;
+  }
+  .try-this__image img {
+    width: 70%;
+  }
+}
 .less-more__crop {
   transition: 0.3s all;
 }
@@ -2782,6 +2958,21 @@ a:hover {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .amazon {
+    display: block;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-family: "Freight Display Bold", serif;
+    font-size: 46px;
+    text-align: center;
+  }
+  .amazon img {
+    margin-bottom: -5px;
+    margin-right: 10px;
+    width: 60px;
+  }
+}
 .amazon-sm__body {
   display: flex;
   align-items: center;
@@ -2797,6 +2988,11 @@ a:hover {
   line-height: 1.5;
 }
 
+@media (min-width: 768px) {
+  .amazon-sm {
+    display: none;
+  }
+}
 .light-sm {
   position: relative;
   padding: 35px 0;
@@ -2829,6 +3025,11 @@ a:hover {
   right: 0;
 }
 
+@media (min-width: 768px) {
+  .light-sm {
+    display: none;
+  }
+}
 .powers-sm {
   background: #fff linear-gradient(229.74deg, rgba(255, 117, 195, 0.07) 0%, rgba(255, 166, 71, 0.07) 20%, rgba(255, 232, 63, 0.07) 40%, rgba(159, 255, 91, 0.07) 60%, rgba(112, 226, 255, 0.07) 80%, rgba(205, 147, 255, 0.07) 100%);
   padding: 45px 0;
@@ -2861,6 +3062,11 @@ a:hover {
   line-height: 1.5;
 }
 
+@media (min-width: 768px) {
+  .powers-sm {
+    display: none;
+  }
+}
 .select-size {
   margin-top: 15px;
   margin-bottom: 55px;
@@ -2893,4 +3099,38 @@ a:hover {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .select-size__body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .select-size__desc {
+    padding-left: 15px;
+  }
+  .select-size__title {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+  .select-size__info {
+    display: none;
+  }
+  .select-size__link {
+    display: inline;
+    font-family: "Selina W08 Calligraphic", sans-serif;
+    font-size: 18px;
+  }
+  .select-size__values {
+    margin: 0;
+  }
+  .select-size__values li {
+    width: 43px;
+    height: 43px;
+    line-height: 40px;
+    margin-right: 0;
+    margin-left: 16px;
+  }
 }

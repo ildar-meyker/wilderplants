@@ -122,7 +122,7 @@
                     </div>
                     
                     <div class="plant-card__buy">
-                        <button type="button" class="button-filled">
+                        <button type="button" class="button-filled button-filled--size-2 plant-card__buy__button">
                             Buy now
                         </button>
                     </div>
@@ -234,56 +234,64 @@
                             <div class="try-this__image">
                                 <img src="/img/plant-pots/1.jpg" alt="">
                             </div>
-                            <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, White Planter, 5"</div>
-                            <div class="try-this__price">$18.07</div>
-                            <button type="button" class="button-border try-this__button">
-                                Quick view
-                            </button>
-                            <button type="button" class="button-filled try-this__button">
-                                Add to cart
-                            </button>
+                            <div class="try-this__desc">
+                                <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, White Planter, 5"</div>
+                                <div class="try-this__price">$18.07</div>
+                                <button type="button" class="button-border try-this__button">
+                                    Quick view
+                                </button>
+                                <button type="button" class="button-filled try-this__button">
+                                    Add to cart
+                                </button>
+                            </div>
                         </div>
 
                         <div class="plant-pots__item">
                             <div class="try-this__image">
                                 <img src="/img/plant-pots/2.jpg" alt="">
                             </div>
-                            <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, Grey Planter, 5"</div>
-                            <div class="try-this__price">$18.00</div>
-                            <button type="button" class="button-border try-this__button">
-                                Quick view
-                            </button>
-                            <button type="button" class="button-filled try-this__button">
-                                Add to cart
-                            </button>
+                            <div class="try-this__desc">
+                                <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, Grey Planter, 5"</div>
+                                <div class="try-this__price">$18.00</div>
+                                <button type="button" class="button-border try-this__button">
+                                    Quick view
+                                </button>
+                                <button type="button" class="button-filled try-this__button">
+                                    Add to cart
+                                </button>
+                            </div>
                         </div>
 
                         <div class="plant-pots__item">
                             <div class="try-this__image">
                                 <img src="/img/plant-pots/3.jpg" alt="">
                             </div>
-                            <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, Black Planter, 5"</div>
-                            <div class="try-this__price">$18.00</div>
-                            <button type="button" class="button-border try-this__button">
-                                Quick view
-                            </button>
-                            <button type="button" class="button-filled try-this__button">
-                                Add to cart
-                            </button>
+                            <div class="try-this__desc">
+                                <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, Black Planter, 5"</div>
+                                <div class="try-this__price">$18.00</div>
+                                <button type="button" class="button-border try-this__button">
+                                    Quick view
+                                </button>
+                                <button type="button" class="button-filled try-this__button">
+                                    Add to cart
+                                </button>
+                            </div>
                         </div>
 
                         <div class="plant-pots__item">
                             <div class="try-this__image">
-                                <img src="/img/plant-pots/3.jpg" alt="">
+                                <img src="/img/plant-pots/4.jpg" alt="">
                             </div>
-                            <div class="try-this__name">Amazon Brand – Rivet Geometric Ceramic Planter Pot, 4.1"H, Grey</div>
-                            <div class="try-this__price">$21.32</div>
-                            <button type="button" class="button-border try-this__button">
-                                Quick view
-                            </button>
-                            <button type="button" class="button-filled try-this__button">
-                                Add to cart
-                            </button>
+                            <div class="try-this__desc">
+                                <div class="try-this__name">Amazon Brand – Rivet Geometric Ceramic Planter Pot, 4.1"H, Grey</div>
+                                <div class="try-this__price">$21.32</div>
+                                <button type="button" class="button-border try-this__button">
+                                    Quick view
+                                </button>
+                                <button type="button" class="button-filled try-this__button">
+                                    Add to cart
+                                </button>
+                            </div>
                         </div>
 
                     </div>
@@ -451,56 +459,64 @@
                     <div class="try-this__image">
                         <img src="/img/try-this/1.jpg" alt="">
                     </div>
-                    <div class="try-this__name">Plant Mister Spray Bottle, FUBARBAR 10oz Best Hair Water Paint Oil Pressure Mist Empty Disinfection Spray Bottle for…</div>
-                    <div class="try-this__price">$8.99</div>
-                    <button type="button" class="button-border try-this__button">
-                        Quick view
-                    </button>
-                    <button type="button" class="button-filled try-this__button">
-                        Add to cart
-                    </button>
+                    <div class="try-this__desc">
+                        <div class="try-this__name">Plant Mister Spray Bottle, FUBARBAR 10oz Best Hair Water Paint Oil Pressure Mist Empty Disinfection Spray Bottle for…</div>
+                        <div class="try-this__price">$8.99</div>
+                        <button type="button" class="button-border try-this__button">
+                            Quick view
+                        </button>
+                        <button type="button" class="button-filled try-this__button">
+                            Add to cart
+                        </button>
+                    </div>
                 </li>
 
                 <li class="try-this__item">
                     <div class="try-this__image">
                         <img src="/img/try-this/2.jpg" alt="">
                     </div>
-                    <div class="try-this__name">Burpee Natural & Organic GardenCoir, 8 quart, (1 Pack)</div>
-                    <div class="try-this__price">$11.99</div>
-                    <button type="button" class="button-border try-this__button">
-                        Quick view
-                    </button>
-                    <button type="button" class="button-filled try-this__button">
-                        Add to cart
-                    </button>
+                    <div class="try-this__desc">
+                        <div class="try-this__name">Burpee Natural & Organic GardenCoir, 8 quart, (1 Pack)</div>
+                        <div class="try-this__price">$11.99</div>
+                        <button type="button" class="button-border try-this__button">
+                            Quick view
+                        </button>
+                        <button type="button" class="button-filled try-this__button">
+                            Add to cart
+                        </button>
+                    </div>
                 </li>
 
                 <li class="try-this__item">
                     <div class="try-this__image">
                         <img src="/img/try-this/3.jpg" alt="">
                     </div>
-                    <div class="try-this__name">Fasmov Stainless Steel Watering Can with Long Spout Modern Style Watering Pot, 53oz/1.5L</div>
-                    <div class="try-this__price">$17.99</div>
-                    <button type="button" class="button-border try-this__button">
-                        Quick view
-                    </button>
-                    <button type="button" class="button-filled try-this__button">
-                        Add to cart
-                    </button>
+                    <div class="try-this__desc">
+                        <div class="try-this__name">Fasmov Stainless Steel Watering Can with Long Spout Modern Style Watering Pot, 53oz/1.5L</div>
+                        <div class="try-this__price">$17.99</div>
+                        <button type="button" class="button-border try-this__button">
+                            Quick view
+                        </button>
+                        <button type="button" class="button-filled try-this__button">
+                            Add to cart
+                        </button>
+                    </div>
                 </li>
 
                 <li class="try-this__item">
                     <div class="try-this__image">
                         <img src="/img/try-this/4.jpg" alt="">
                     </div>
-                    <div class="try-this__name">IPPINKA Sustee Aquameter, Plaint Moisture Sensor Set of 2 (Green, Medium)</div>
-                    <div class="try-this__price">$14.95</div>
-                    <button type="button" class="button-border try-this__button">
-                        Quick view
-                    </button>
-                    <button type="button" class="button-filled try-this__button">
-                        Add to cart
-                    </button>
+                    <div class="try-this__desc">
+                        <div class="try-this__name">IPPINKA Sustee Aquameter, Plaint Moisture Sensor Set of 2 (Green, Medium)</div>
+                        <div class="try-this__price">$14.95</div>
+                        <button type="button" class="button-border try-this__button">
+                            Quick view
+                        </button>
+                        <button type="button" class="button-filled try-this__button">
+                            Add to cart
+                        </button>
+                    </div>
                 </li>
 
             </ul>

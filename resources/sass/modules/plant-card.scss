@@ -137,6 +137,12 @@
             max-width: 50%;
         }
 
+
+        &__left {
+            margin-top: 20px;
+        }
+
+        
         
 
         &__right {
@@ -165,6 +171,9 @@
 
         }
 
+
+
+
         &__info {
             padding: 7px;
             line-height: 0;
@@ -173,9 +182,11 @@
         &__buy {
             margin-top: 50px;
 
-            button {
-                min-width: 160px;
+            &__button {
+                font-size: 19px;
+                min-width: 35%;
             }
+  
         }
 
         &__save {
@@ -295,23 +306,20 @@
 @media (min-width: 1024px) {
     .plant-card {
 
-        &__left {
-            padding: 0 40px;
-        }
-
-        &__buy {
-
-            button {
-                min-width: 220px;
-            }
-        }
-
-
         .lSPager {
             li {
                 width: 90px !important;
                 height: 90px !important;
             }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .plant-card {
+
+        &__left {
+            padding: 0 40px;
         }
     }
 }
