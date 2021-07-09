@@ -1,10 +1,10 @@
 .choosing {
     padding: 50px 0;
-    background: linear-gradient(90deg, rgba(22, 160, 133, 0.1) 0%, rgba(244, 208, 63, 0.1) 100%);
-
-    &__title-1 {
-        text-align: center;
-    }
+    background: linear-gradient(
+        90deg,
+        rgba(22, 160, 133, 0.1) 0%,
+        rgba(244, 208, 63, 0.1) 100%
+    );
 
     &__title-2 {
         text-align: center;
@@ -15,7 +15,6 @@
         text-align: center;
         margin-bottom: 40px;
         margin-top: 50px;
-        
     }
 
     &__item {
@@ -40,10 +39,9 @@
         text-align: center;
         margin-top: 20px;
     }
-    
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
     .choosing {
         padding: 80px 0;
 

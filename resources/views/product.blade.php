@@ -323,7 +323,7 @@
                     </div>
                 </div>
                 <div class="plant-story__right less-more">
-                    <h2 class="h2-a plant-story__title-1">Plant Story</h2>
+                    <h2 class="h2 plant-story__title-1">Plant Story</h2>
                     <div class="article less-more__crop plant-story__text">
                         <div class="less-more__ruler">
                             <p>
@@ -344,7 +344,7 @@
     {{--  origin-map --}}
     <section class="origin-map">
         <div class="container">
-            <h2 class="h2-a origin-map__title-1">Place of origin</h2>
+            <h2 class="h2 h2--light text-center">Place of origin</h2>
             <h3 class="origin-map__title-2">Tropical and subtropical regions of Asia and New Guinea</h3>
             <div class="origin-map__image">
                 <img src="/img/origin-map/1.webp" alt="">
@@ -356,7 +356,7 @@
     {{--  plant-types --}}
     <section class="plant-types">
         <div class="container">
-            <h2 class="h2-a plant-types__title-1">Aglaonema</h2>
+            <h2 class="h2 h2--light text-center">Aglaonema</h2>
             <h3 class="h5 plant-types__title-2">This plant comes in different varieties.</h3>
             <ul class="plant-types__list" id="types-slider">
                 <li class="plant-types__item">
@@ -381,7 +381,7 @@
         <div class="container">
             <div class="care-card__row">
                 <div class="care-card__left">
-                    <h2 class="h2-a care-card__title-1">Care for your Aglaonema Pink Like a Pro!</h2>
+                    <h2 class="h2 h2--light care-card__title-1">Care for your Aglaonema Pink Like a Pro!</h2>
                     <h3 class="care-card__title-2">
                         Check out it's personal <a href="#" class="button-link care-card__link">CARE CARD</a>
                     </h3>
@@ -397,7 +397,7 @@
     {{--  try-this --}}
     <section class="try-this">
         <div class="container">
-            <h2 class="h2-a try-this__title-1">Accessories</h2>
+            <h2 class="h2 h2--light text-center">Accessories</h2>
        
             <h3 class="h5 try-this__title-2">Houseplant starter kit</h3>
        

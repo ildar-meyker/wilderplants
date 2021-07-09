@@ -1,7 +1,7 @@
 {{--  choosing --}}
 <section class="choosing">
     <div class="container">
-        <h2 class="h2 choosing__title-1">Need help choosing your plants?</h2>
+        <h2 class="h2 h2--light text-center">Need help choosing your plants?</h2>
         <h3 class="h4 choosing__title-2">Let us guide you!</h3>
 
         <div class="choosing__link">

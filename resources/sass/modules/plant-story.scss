@@ -1,13 +1,11 @@
-
 .plant-story {
-
     &__left {
         text-align: center;
 
         img {
             width: 80%;
         }
-   }
+    }
 
     &__right {
         margin-top: 15px;
@@ -20,20 +18,15 @@
 
     &__title-1 {
         text-align: center;
-        margin-bottom: 20px;
     }
 
     &__link {
         margin-top: 30px;
     }
-
 }
 
 @media (min-width: 768px) {
-
-
     .plant-story {
-
         &__title-1 {
             text-align: left;
         }
@@ -62,5 +55,4 @@
             }
         }
     }
-
 }

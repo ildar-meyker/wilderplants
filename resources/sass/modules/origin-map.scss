@@ -2,11 +2,6 @@
     margin-top: 45px;
     margin-bottom: 15px;
 
-    &__title-1 {
-        margin-bottom: 22px;
-        text-align: center;
-    }
-
     &__title-2 {
         margin-bottom: 20px;
         font-family: "Selina", sans-serif;
@@ -25,7 +20,6 @@
 }
 
 @media (min-width: 768px) {
-
     .origin-map {
         margin-bottom: 45px;
 
@@ -35,5 +29,4 @@
             }
         }
     }
-
 }

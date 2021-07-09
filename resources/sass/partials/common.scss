@@ -130,15 +130,14 @@ body {
 }
 
 .h2 {
+    margin-bottom: 20px;
     font-family: "Freight Display Bold", serif;
-    font-size: 40px;
-    line-height: 1.15;
-}
+    font-size: 34px;
+    line-height: 1.1;
 
-.h2-a {
-    font-family: "Freight Display Bold", serif;
-    font-size: 36px;
-    line-height: 1.25;
+    &--light {
+        color: #3e3e3e;
+    }
 }
 
 .h3 {
@@ -186,12 +185,7 @@ a {
     }
 
     .h2 {
-        font-size: 46px;
-    }
-
-    .h2-a {
-        font-size: 46px;
-        line-height: 1.15;
+        font-size: 36px;
     }
 
     .h3 {

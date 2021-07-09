@@ -1,11 +1,4 @@
-
 .plant-types {
-
-    &__title-1 {
-        margin-bottom: 22px;
-        text-align: center;
-    }
-
     &__title-2 {
         font-family: "Selina", sans-serif;
         font-size: 20px;
@@ -38,14 +31,10 @@
         text-transform: uppercase;
         text-align: center;
     }
-
-
 }
 
 @media (min-width: 768px) {
-
     .plant-types {
-
         &__list {
             margin-right: 50px;
             margin-left: 50px;
@@ -58,5 +47,4 @@
             padding: 0;
         }
     }
-
 }

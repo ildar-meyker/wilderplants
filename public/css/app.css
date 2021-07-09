@@ -1249,15 +1249,13 @@ body.locked {
 }
 
 .h2 {
+  margin-bottom: 20px;
   font-family: "Freight Display Bold", serif;
-  font-size: 40px;
-  line-height: 1.15;
+  font-size: 34px;
+  line-height: 1.1;
 }
-
-.h2-a {
-  font-family: "Freight Display Bold", serif;
-  font-size: 36px;
-  line-height: 1.25;
+.h2--light {
+  color: #3e3e3e;
 }
 
 .h3 {
@@ -1303,12 +1301,7 @@ a:hover {
   }
 
   .h2 {
-    font-size: 46px;
-  }
-
-  .h2-a {
-    font-size: 46px;
-    line-height: 1.15;
+    font-size: 36px;
   }
 
   .h3 {
@@ -1818,9 +1811,6 @@ a:hover {
   padding: 50px 0;
   background: linear-gradient(90deg, rgba(22, 160, 133, 0.1) 0%, rgba(244, 208, 63, 0.1) 100%);
 }
-.choosing__title-1 {
-  text-align: center;
-}
 .choosing__title-2 {
   text-align: center;
   margin-top: 60px;
@@ -1867,10 +1857,6 @@ a:hover {
 .subscribe {
   padding: 50px 0;
   background: linear-gradient(90deg, rgba(247, 238, 30, 0.3) 0%, rgba(114, 198, 239, 0.3) 50%, rgba(0, 166, 81, 0.3) 100%);
-}
-.subscribe__title-1 {
-  text-align: center;
-  color: #3E3E3E;
 }
 .subscribe__form {
   display: flex;
@@ -2751,7 +2737,6 @@ a:hover {
 }
 .plant-story__title-1 {
   text-align: center;
-  margin-bottom: 20px;
 }
 .plant-story__link {
   margin-top: 30px;
@@ -2779,10 +2764,6 @@ a:hover {
   .plant-story__image img {
     width: auto;
   }
-}
-.plant-types__title-1 {
-  margin-bottom: 22px;
-  text-align: center;
 }
 .plant-types__title-2 {
   font-family: "Selina", sans-serif;
@@ -2829,10 +2810,6 @@ a:hover {
   margin-top: 45px;
   margin-bottom: 15px;
 }
-.origin-map__title-1 {
-  margin-bottom: 22px;
-  text-align: center;
-}
 .origin-map__title-2 {
   margin-bottom: 20px;
   font-family: "Selina", sans-serif;
@@ -2860,7 +2837,6 @@ a:hover {
   margin-top: 60px;
 }
 .care-card__title-1 {
-  margin-bottom: 30px;
   text-align: center;
 }
 .care-card__title-2 {
@@ -2942,10 +2918,6 @@ a:hover {
 .try-this {
   margin-bottom: 20px;
 }
-.try-this__title-1 {
-  margin-bottom: 18px;
-  text-align: center;
-}
 .try-this__title-2 {
   margin-bottom: 30px;
   text-align: center;
@@ -2996,9 +2968,6 @@ a:hover {
   .try-this {
     margin-bottom: 80px;
     overflow: hidden;
-  }
-  .try-this__title-1 {
-    margin-bottom: 22px;
   }
   .try-this__title-2 {
     margin-bottom: 55px;
@@ -3124,6 +3093,9 @@ a:hover {
     margin: 0 20px;
     text-align: center;
     cursor: pointer;
+  }
+  .powers__icons__desc {
+    padding-left: 0;
   }
   .powers__icons__title {
     margin-top: 15px;

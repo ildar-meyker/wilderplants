@@ -1,11 +1,6 @@
 .try-this {
     margin-bottom: 20px;
 
-    &__title-1 {
-        margin-bottom: 18px;
-        text-align: center;
-    }
-
     &__title-2 {
         margin-bottom: 30px;
         text-align: center;
@@ -48,7 +43,6 @@
     }
 
     &__price {
-        
         font-family: "Calluna Sans", sans-serif;
         font-size: 22px;
         font-weight: 400;
@@ -60,20 +54,12 @@
         margin-top: 10px;
         width: 100%;
     }
-
-
 }
 
 @media (min-width: 768px) {
-
-
     .try-this {
         margin-bottom: 80px;
         overflow: hidden;
-
-        &__title-1 {
-            margin-bottom: 22px;
-        }
 
         &__title-2 {
             margin-bottom: 55px;
@@ -97,5 +83,4 @@
             }
         }
     }
-
 }

@@ -1,11 +1,11 @@
 .subscribe {
     padding: 50px 0;
-    background: linear-gradient(90deg, rgba(247, 238, 30, 0.3) 0%, rgba(114, 198, 239, 0.3) 50%, rgba(0, 166, 81, 0.3) 100%);
-
-    &__title-1 {
-        text-align: center;
-        color: #3E3E3E;
-    }
+    background: linear-gradient(
+        90deg,
+        rgba(247, 238, 30, 0.3) 0%,
+        rgba(114, 198, 239, 0.3) 50%,
+        rgba(0, 166, 81, 0.3) 100%
+    );
 
     &__form {
         display: flex;
@@ -25,12 +25,9 @@
         text-transform: uppercase;
         padding: 0 20px;
     }
-
 }
 
-
-@media  (min-width: 768px) {
-
+@media (min-width: 768px) {
     .subscribe {
         padding: 95px 0;
 
@@ -38,17 +35,11 @@
             margin: 55px auto 0 auto;
             max-width: 400px;
         }
-
     }
-
-
 }
 
-
-@media  (min-width: 1200px) {
-
+@media (min-width: 1200px) {
     .subscribe {
         padding: 115px 0;
     }
-
 }
