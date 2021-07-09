@@ -1,0 +1,244 @@
+.checkout {
+    margin: 0 -30px;
+    padding: 25px 30px;
+    background: linear-gradient(
+        226.76deg,
+        rgba(255, 117, 195, 0.07) 0%,
+        rgba(255, 166, 71, 0.07) 20%,
+        rgba(255, 232, 63, 0.07) 40%,
+        rgba(159, 255, 91, 0.07) 60%,
+        rgba(112, 226, 255, 0.07) 80%,
+        rgba(205, 147, 255, 0.07) 100%
+    );
+
+    &__step {
+        margin-bottom: 35px;
+
+        &__title {
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &__info {
+            margin-bottom: 15px;
+            font-family: "Selina";
+            font-size: 18px;
+
+            a {
+                text-decoration: underline;
+                color: #3e3e3e;
+            }
+        }
+    }
+
+    &__sizes {
+        display: flex;
+
+        &__item {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            padding-left: 6px;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 58px;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &--active {
+                border-color: transparent;
+                background: #138563;
+                color: #fff;
+            }
+        }
+    }
+
+    &__select {
+        position: relative;
+
+        &__button {
+            position: relative;
+            background: #fff;
+            overflow: hidden;
+            cursor: pointer;
+
+            &__input {
+                border: 1px solid #b0b0b0;
+                padding-left: 10px;
+                padding-right: 55px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                text-transform: capitalize;
+                font-size: 18px;
+                line-height: 43px;
+                color: #b0b0b0;
+            }
+
+            &__arrow {
+                position: absolute;
+                right: 0;
+                top: 0;
+                line-height: 45px;
+                width: 45px;
+                background: #000;
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        &__list {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            top: 100%;
+            margin-top: 20px;
+            left: 0;
+            width: 100%;
+            max-height: 300px;
+            overflow: auto;
+            background: #fff;
+
+            &__empty {
+                padding: 30px 15px;
+            }
+        }
+
+        &__item {
+            display: flex;
+            border-top: 1px dotted #000;
+            cursor: pointer;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            &:hover {
+                .checkout__select__item__desc {
+                    background: #dfdfdf;
+                }
+            }
+
+            &__image {
+                flex: 0 0 50%;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+
+            &__desc {
+                transition: all 0.2s;
+                flex: 0 0 50%;
+                padding: 15px;
+                text-align: center;
+            }
+
+            &__name {
+                font-family: "Calluna Sans";
+                line-height: 1.5;
+            }
+
+            &__price {
+                margin-bottom: 12px;
+                margin-top: 5px;
+                font-family: "Calluna Sans";
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+
+        &__checked {
+            display: flex;
+            align-items: center;
+            font-family: "Calluna Sans";
+
+            &__image {
+                flex: 1 1 10%;
+                max-width: 70px;
+                min-width: 50px;
+                background-size: cover;
+
+                &:before {
+                    content: " ";
+                    padding-top: 100%;
+                    display: block;
+                }
+            }
+
+            &__name {
+                padding-left: 20px;
+                flex: 1 1 50%;
+                line-height: 1.5;
+            }
+
+            &__price {
+                padding-left: 20px;
+                flex: 1 1 15%;
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            &__ctrl {
+                padding-left: 20px;
+                font-size: 17px;
+                color: #898989;
+            }
+        }
+    }
+
+    &__total {
+        display: flex;
+        align-items: center;
+
+        &__price {
+            flex-grow: 1;
+            font-family: "Calluna Sans";
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .checkout {
+        background: none;
+        margin: 0;
+        padding: 0;
+
+        &__sizes {
+            &__item {
+                width: 40px;
+                height: 40px;
+                line-height: 38px;
+                margin-right: 14px;
+                font-size: 14px;
+            }
+        }
+
+        &__step {
+            margin-bottom: 40px;
+
+            &__title {
+                font-size: 16px;
+
+                &--size {
+                    margin-bottom: 6px;
+                }
+            }
+
+            &__info {
+                margin-bottom: 8px;
+                font-size: 16px;
+            }
+        }
+
+        &__total {
+            &__price {
+                font-size: 26px;
+            }
+        }
+    }
+}

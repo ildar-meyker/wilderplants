@@ -1,6 +1,6 @@
-
 @import "destyle.css";
 @import "~lightslider/dist/css/lightslider.css";
+@import "~simplebar/dist/simplebar.css";
 
 @import "./partials/fonts";
 @import "./partials/common";
@@ -24,16 +24,11 @@
 @import "./modules/plant-card";
 @import "./modules/plant-story";
 @import "./modules/plant-types";
-@import "./modules/plant-pots";
 @import "./modules/origin-map";
 @import "./modules/care-card.scss";
 @import "./modules/quote";
 @import "./modules/try-this";
 @import "./modules/less-more";
-@import "./modules/amazon";
-@import "./modules/amazon-sm";
 @import "./modules/light-sm";
-@import "./modules/powers-sm";
-@import "./modules/select-size";
-
-
+@import "./modules/powers";
+@import "./modules/checkout";

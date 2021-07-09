@@ -1,0 +1,110 @@
+.powers {
+    @include gradient-1;
+    padding: 50px 0;
+
+    &__h1 {
+        margin-bottom: 35px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__icons {
+        &__title {
+            font-weight: 700;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        &__image {
+            flex: 0 0 50px;
+        }
+
+        &__desc {
+            flex-grow: 1;
+            padding-left: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
+    &__tabs {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .powers {
+        padding: 50px;
+
+        &__h1 {
+            margin-bottom: 55px;
+            font-size: 32px;
+            text-transform: none;
+            color: #3e3e3e;
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: center;
+
+            &__item {
+                display: block;
+                flex: 0 0 80px;
+                margin: 0 20px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            &__title {
+                margin-top: 15px;
+                font-family: "Calluna Sans";
+                font-weight: 400;
+            }
+
+            &__text {
+                display: none;
+            }
+        }
+
+        &__tabs {
+            display: block;
+            position: relative;
+            margin: 50px auto 0 auto;
+            max-width: 700px;
+
+            &__item {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                visibility: hidden;
+                opacity: 0;
+                text-align: center;
+
+                &.active {
+                    transition: 0.3s all;
+                    position: static;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            &__title {
+                margin-bottom: 25px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            &__text {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+    }
+}

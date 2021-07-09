@@ -91,84 +91,147 @@
     <section class="plant-card">
         <div class="container">
             <div class="plant-card__row">
-                <div class="plant-card__left">
-                    <ul class="plant-card__list" id="photos-slider">
-                        <li class="plant-card__item" data-thumb="/img/plant-card/3.webp">
+                <div class="plant-card__col-images">
+                    <ul class="plant-card__slides" id="photos-slider">
+                        <li class="plant-card__slides__item" data-thumb="/img/plant-card/3.webp">
                             <img src="/img/plant-card/3.webp" alt="">
                         </li>
-                        <li class="plant-card__item" data-thumb="/img/plant-card/4.webp">
+                        <li class="plant-card__slides__item" data-thumb="/img/plant-card/4.webp">
                             <img src="/img/plant-card/4.webp" alt="">
                         </li>
-                        <li class="plant-card__item" data-thumb="/img/plant-card/5.webp">
+                        <li class="plant-card__slides__item" data-thumb="/img/plant-card/5.webp">
                             <img src="/img/plant-card/5.webp" alt="">
                         </li>
                     </ul>
-                </div>
-            
-                <div class="plant-card__right">
-                    <h2 class="h2-a plant-card__title-1">Alocasia Polly</h2>
-                    
-                    <div class="plant-card__desc">
-                        <strong>Botanical name:</strong> Alocasia Amazonica <br>
-                        <strong>Nickname:</strong> Elephant Ear; hybrid of Alocasia watsoniana Hort. and Alocasia sanderiana Hort.
-                    </div>
-                    
-                    <div class="plant-card__light">
-                        <img src="/img/svg-icons/sun.svg" class="plant-card__light__icon">
-                        <span class="plant-card__light__desc">Light: Bright Indirect</span>
-                        <a href="#" class="plant-card__info js-open-info" data-src="/html/info/light">
-                            <i class="icomoon-information-solid"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="plant-card__buy">
-                        <button type="button" class="button-filled button-filled--size-2 plant-card__buy__button">
-                            Buy now
-                        </button>
-                    </div>
-                    
-                    <div class="plant-card__save">
-                        <div class="plant-card__save__title">Alocasia Polly</div>
 
-                        <button type="button" class="plant-card__save__button">
+                    <div class="plant-card__about-pics">
+                        The picture above  is an expamle. Each plant is different, the actual plant you get depens on an Amazon.com seller.
+                    </div>
+
+                    <div class="plant-card__like">
+                        <button type="button" class="plant-card__like__button">
                             <span>Save to wishlist</span>
                             <i class="icomoon-heart-o"></i>
                         </button>
                     </div>
+                </div>
+            
+                <div class="plant-card__col-desc">
+                    
+                    <h1 class="plant-card__title">
+                        <span>Aglaonema Marie Plant</span>
+                        <button type="button" class="plant-card__title__like">
+                            <i class="icomoon-heart-o"></i>
+                        </button>
+                    </h1>              
 
-                    <section id="super-powers">
-                        <h3 class="plant-card__title-2">BOTANICAL SUPER POWERS</h3>
+                    <div class="plant-card__desc">Monstera Deliciosa, Swiss Cheese Plant, Swiss Cheese Plant, Swiss Cheese Plant</div>
 
-                        <div class="plant-card__icons">
-                            <div class="plant-card__icons__item active">
-                                <div class="plant-card__icons__image">
-                                    <img src="/img/svg-icons/air.svg" alt="">
-                                </div>
-                                <div class="plant-card__icons__name">air-purifying</div>
+                    <div class="plant-card__amazon">
+                        <div class="plant-card__amazon__icon">
+                            <img src="/img/plant-card/amazon.svg" alt="Amazon">
+                        </div>
+                        <div class="plant-card__amazon__text">
+                            You will be redirected to Amazon.com to complete your checkout
+                        </div>
+                    </div>
+
+                    <div class="checkout">
+                        <div class="checkout__step">
+                            <div class="checkout__step__title checkout__step__title--size">choose your size</div>
+                            <div class="checkout__step__info">
+                                <a href="#">Size chart</a>
                             </div>
-                            <div class="plant-card__icons__item">
-                                <div class="plant-card__icons__image">
-                                    <img src="/img/svg-icons/glasses.svg" alt="">
-                                </div>
-                                <div class="plant-card__icons__name">low light<br> tolerant</div>
+                            <div class="checkout__sizes">
+                                <div class="checkout__sizes__item checkout__sizes__item--active">4”</div>
+                                <div class="checkout__sizes__item">6”</div>
+                                <div class="checkout__sizes__item">8”</div>
+                                <div class="checkout__sizes__item">10”</div>
                             </div>
                         </div>
 
-                        <div class="plant-card__tabs">
-                            <div class="plant-card__tabs__item active">
-                                <div class="plant-card__tabs__title">Air-Purifying</div>
-                                <div class="plant-card__tabs__desc">
-                                    This plant cleans the air from toxins and VOCs like a pro.
+                        <div class="checkout__step">
+                            <div class="checkout__step__title">choose your plant</div>
+                            <div class="checkout__select">
+                                <div class="checkout__select__button">
+                                    <div class="checkout__select__button__input">Choose Your Plant</div>
+                                    <div class="checkout__select__button__arrow">
+                                        <i class="icomoon-arrow-thin-down"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="plant-card__tabs__item">
-                                <div class="plant-card__tabs__title">Low Light Tolerant</div>
-                                <div class="plant-card__tabs__desc">
-                                    This plant feels good even in dimly lit rooms.
+                                <div class="checkout__select__list" data-simplebar>
+                                    <div class="checkout__select__item">
+                                        <div class="checkout__select__item__image" style="background-image: url(/img/plant-card/5.webp)"></div>
+                                        <div class="checkout__select__item__desc">
+                                            <div class="checkout__select__item__name">Aglaonema swiss chesse Plant Costa</div>
+                                            <div class="checkout__select__item__price">$30</div>
+                                            <button type="button" class="button-border button-border--size-3">LEARN MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="checkout__select__item">
+                                        <div class="checkout__select__item__image" style="background-image: url(/img/plant-card/5.webp)"></div>
+                                        <div class="checkout__select__item__desc">
+                                            <div class="checkout__select__item__name">Aglaonema swiss chesse Plant Costa</div>
+                                            <div class="checkout__select__item__price">$30</div>
+                                            <button type="button" class="button-border button-border--size-3">LEARN MORE</button>
+                                        </div>
+                                    </div>
+                                    <div class="checkout__select__list__empty">Nothing to select.</div>
                                 </div>
                             </div>
                         </div>
-                    </section>
+
+                        <div class="checkout__step">
+                            <div class="checkout__step__title">choose your pot</div>
+                            <div class="checkout__select">
+                                <div class="checkout__select__button">
+                                    <div class="checkout__select__button__input">choose your pot</div>
+                                    <div class="checkout__select__button__arrow">
+                                        <i class="icomoon-arrow-thin-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout__step">
+                            <div class="checkout__step__title">choose your Accessories</div>
+                            <div class="checkout__select">
+                                <div class="checkout__select__button">
+                                    <div class="checkout__select__button__input">choose your Accessories</div>
+                                    <div class="checkout__select__button__arrow">
+                                        <i class="icomoon-arrow-thin-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout__step">
+                            <div class="checkout__step__title">current plant</div>
+                            <div class="checkout__select">
+                                <div class="checkout__select__checked">
+                                    <div class="checkout__select__checked__image" style="background-image: url(/img/plant-card/5.webp)"></div>
+                                    <div class="checkout__select__checked__name">
+                                        Split Leaf Philodendron – MonsSplit Leaf Philodendron – Mons
+                                    </div>
+                                    <div class="checkout__select__checked__price">$30</div>
+                                    <div class="checkout__select__checked__ctrl">
+                                        <button type="button">
+                                            <i class="icomoon-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout__total">
+                            <div class="checkout__total__price">$30</div>
+                            <div class="checkout__total__ctrl">
+                                <button type="button" class="button-filled button-filled--size-2">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -176,184 +239,69 @@
     </section>
     {{--  plant-card --}}
 
-    <div class="amazon">
-        <div class="container">
-            <img src="/img/amazon/logo.png" alt=""> Buy on Amazon
-        </div>
-    </div>
-
-    {{--  select-size --}}
-    <section class="select-size">
-        <div class="container">
-            <div class="select-size__body">
-                <div class="select-size__desc">
-                    <div class="select-size__title">
-                        <span>SELECT YOUR SIZE</span>
-                        <a href="#" 
-                            class="select-size__info js-open-info" 
-                            data-src="/html/info/1">
-                            <i class="icomoon-information-solid"></i>
-                        </a>
-                    </div>
-                    <a href="#" class="select-size__link">Size guide</a>
-                </div>
-                <ul class="select-size__values">
-                    <li>4"</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    {{-- /select-size --}}
-
-    {{--  plant-pots --}}
-    <section class="plant-pots">
-        <div class="container">
-            <h2 class="h2-a plant-pots__title-1">4" Plants & Pots</h2>
-            <div class="plant-pots__row">
-                <div class="plant-pots__left">
-
-                    <div class="plant-pots__large">
-                        <div class="plant-pots__large__image">
-                            <img src="/img/plant-pots/5.jpeg" alt="">
-                        </div>
-                        <div class="plant-pots__large__name">American Plant Exchange Aglaonema Chinese Evergreen Hot Pink Valentine Wishes Live Plant, 4" Pot, Indoor/Outdoor Air Purifier</div>
-                        <div class="plant-pots__large__price">$21.99</div>
-                        <button type="button" class="button-border button-border--size-2 plant-pots__large__button">
-                            Quick view
-                        </button>
-                        <button type="button" class="button-filled button-filled--size-2 plant-pots__large__button">
-                            Add to cart
-                        </button>
-                    </div>
-                
-                </div>
-                <div class="plant-pots__right">
-                    <div class="plant-pots__list">
-
-                        <div class="plant-pots__item">
-                            <div class="try-this__image">
-                                <img src="/img/plant-pots/1.jpg" alt="">
-                            </div>
-                            <div class="try-this__desc">
-                                <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, White Planter, 5"</div>
-                                <div class="try-this__price">$18.07</div>
-                                <button type="button" class="button-border try-this__button">
-                                    Quick view
-                                </button>
-                                <button type="button" class="button-filled try-this__button">
-                                    Add to cart
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="plant-pots__item">
-                            <div class="try-this__image">
-                                <img src="/img/plant-pots/2.jpg" alt="">
-                            </div>
-                            <div class="try-this__desc">
-                                <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, Grey Planter, 5"</div>
-                                <div class="try-this__price">$18.00</div>
-                                <button type="button" class="button-border try-this__button">
-                                    Quick view
-                                </button>
-                                <button type="button" class="button-filled try-this__button">
-                                    Add to cart
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="plant-pots__item">
-                            <div class="try-this__image">
-                                <img src="/img/plant-pots/3.jpg" alt="">
-                            </div>
-                            <div class="try-this__desc">
-                                <div class="try-this__name">Bloomingville Stoneware Flower Pot with Polka Dots, Black Planter, 5"</div>
-                                <div class="try-this__price">$18.00</div>
-                                <button type="button" class="button-border try-this__button">
-                                    Quick view
-                                </button>
-                                <button type="button" class="button-filled try-this__button">
-                                    Add to cart
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="plant-pots__item">
-                            <div class="try-this__image">
-                                <img src="/img/plant-pots/4.jpg" alt="">
-                            </div>
-                            <div class="try-this__desc">
-                                <div class="try-this__name">Amazon Brand – Rivet Geometric Ceramic Planter Pot, 4.1"H, Grey</div>
-                                <div class="try-this__price">$21.32</div>
-                                <button type="button" class="button-border try-this__button">
-                                    Quick view
-                                </button>
-                                <button type="button" class="button-filled try-this__button">
-                                    Add to cart
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{-- /plant-pots --}}
-
-    {{--  amazon-sm --}}
-    <section class="amazon-sm">
-        <div class="container">
-            <div class="amazon-sm__body">
-                <div class="amazon-sm__image">
-                    <img src="/img/amazon/logo.png" alt="">
-                </div>
-                <div class="amazon-sm__text">
-                    As an Amazon Associate I earn from qualifying purchases.
-                </div>
-            </div>
-        </div>
-    </section>
-    {{-- /amazon-sm --}}
-
     {{--  light-sm --}}
     <section class="light-sm">
         <div class="container">
-            <div class="light-sm__title-1">Light</div>
-            <div class="light-sm__title-2">LOW TO BRIGHT INDIRECT</div>
-            <a href="#" class="light-sm__link js-open-info" data-src="/html/info/light">Light Guide</a>
-            <img src="/img/svg-icons/light.svg" alt="" class="light-sm__image">
+            <div class="light-sm__center">
+                <div class="light-sm__title-1">Light</div>
+                <div class="light-sm__title-2">LOW TO BRIGHT INDIRECT</div>
+                <a href="#" class="light-sm__link js-open-info" data-src="/html/info/light">Light Guide</a>
+                <img src="/img/svg-icons/light.svg" alt="" class="light-sm__image">
+            </div>
         </div>
     </section>
     {{-- /light-sm --}}
 
-    {{--  powers-sm --}}
-    <section class="powers-sm">
+    {{--  powers --}}
+    <section class="powers" id="super-powers">
         <div class="container">
-            <h2 class="powers-sm__title-1">BOTANICAL SUPER POWERS</h2>
-            <div class="powers-sm__list">
-                <div class="powers-sm__item">
-                    <div class="powers-sm__image">
-                        <img src="/img/svg-icons/glasses.svg" alt="">
+            <h2 class="powers__h1">Botanical super powers</h2>
+            <div class="powers__icons">
+                <div class="powers__icons__item">
+                    <div class="powers__icons__image">
+                        <img src="/img/powers/nasa.svg" alt="">
                     </div>
-                    <div class="powers-sm__text">
-                        <strong>Low light tolerant</strong>
-                        <br>This plant feels good even in dimly lit rooms.
+                    <div class="powers__icons__desc">
+                        <div class="powers__icons__title">Clean air study</div>
+                        <div class="powers__icons__text">NASA tested this plant in a Clean Air study in an attempt to research ways to clean the air in space stations in 1989.</div>
                     </div>
                 </div>
-                <div class="powers-sm__item">
-                    <div class="powers-sm__image">
-                        <img src="/img/svg-icons/air.svg" alt="">
+                <div class="powers__icons__item">
+                    <div class="powers__icons__image">
+                        <img src="/img/powers/footprint.svg" alt="">
                     </div>
-                    <div class="powers-sm__text">
-                        <strong>Air-purifying</strong>
-                        <br>This plant cleans the air from toxins and VOCs like a pro.
+                    <div class="powers__icons__desc">
+                        <div class="powers__icons__title">Pet-friendly</div>
+                        <div class="powers__icons__text">Pet-friendly plants are non-toxic, so even if your pets and kids tend to nibble on the decor, they'll be safe.</div>
                     </div>
+                </div>
+                <div class="powers__icons__item">
+                    <div class="powers__icons__image">
+                        <img src="/img/powers/moon.svg" alt="">
+                    </div>
+                    <div class="powers__icons__desc">
+                        <div class="powers__icons__title">O2 release at night</div>
+                        <div class="powers__icons__text">Unlike most plants, this one releases oxygen at night. Why not put a few of these in the bedroom?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="powers__tabs">
+                <div class="powers__tabs__item active">
+                    <div class="powers__tabs__title">CLEAN AIR STUDY</div>
+                    <div class="powers__tabs__text">NASA tested this plant in a Clean Air study in an attempt to research ways to clean the air in space stations in 1989.</div>
+                </div>
+                <div class="powers__tabs__item">
+                    <div class="powers__tabs__title">Pet-friendly</div>
+                    <div class="powers__tabs__text">Pet-friendly plants are non-toxic, so even if your pets and kids tend to nibble on the decor, they'll be safe.</div>
+                </div>
+                <div class="powers__tabs__item">
+                    <div class="powers__tabs__title">O2 release at night</div>
+                    <div class="powers__tabs__text">Unlike most plants, this one releases oxygen at night. Why not put a few of these in the bedroom?</div>
                 </div>
             </div>
         </div>
     </section>
-    {{-- /powers-sm --}}
+    {{-- /powers --}}
 
     {{--  quote --}}
     <section class="quote">

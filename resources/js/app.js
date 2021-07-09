@@ -1,5 +1,6 @@
 import './bootstrap';
 import "lightslider";
+import 'simplebar';
 
 import BurgerMenu from "./modules/BurgerMenu";
 import CatalogFilter from "./modules/CatalogFilter";
