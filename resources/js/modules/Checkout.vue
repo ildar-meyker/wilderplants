@@ -138,7 +138,11 @@ export default {
             this.loadedPlants = null;
 
             axios
-                .get(`/fake/plants-${this.checkedSize}.json`)
+                .get(`/fake/plants-${this.checkedSize}.json`, {
+                    params: {
+                        size: this.checkedSize,
+                    },
+                })
                 .then((response) => {
                     this.loadedPlants = response.data;
                 })
@@ -151,9 +155,12 @@ export default {
             this.loadedPots = null;
 
             axios
-                .get(
-                    `/fake/pots.json?size=${this.checkedSize}&plant=${this.checkedPlant.id}`
-                )
+                .get(`/fake/pots.json`, {
+                    params: {
+                        size: this.checkedSize,
+                        plant: this.checkedPlant.id,
+                    },
+                })
                 .then((response) => {
                     this.loadedPots = response.data;
                 })
@@ -167,9 +174,11 @@ export default {
 
             axios
                 .get(`/fake/accessories.json`, {
-                    size: this.checkedSize,
-                    plant: this.checkedPlant.id,
-                    pot: this.checkedPot.id,
+                    params: {
+                        size: this.checkedSize,
+                        plant: this.checkedPlant.id,
+                        pot: this.checkedPot.id,
+                    },
                 })
                 .then((response) => {
                     this.loadedAccessories = response.data;
