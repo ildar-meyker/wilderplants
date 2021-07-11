@@ -7,7 +7,6 @@
 	
     <title></title>
 
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6945f5eff9/wilderplants/style.css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>

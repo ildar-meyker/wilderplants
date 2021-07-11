@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Aglaonema swiss chesse Plant Costa",
+      "price": "30",
+      "image": "/img/plant-card/3.webp"
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor sit amet",
+      "price": "30",
+      "image": "/img/plant-card/3.webp"
+    },
+    {
+      "id": 3,
+      "title": "Neque porro quisquam est qui ",
+      "price": "30",
+      "image": "/img/plant-card/3.webp"
+    }
+]

@@ -1,32 +1,27 @@
-import $ from 'jquery';
-import "imagesloaded";
+import $ from "jquery";
 
 const LessMore = {
-    
     toggle(e) {
         e.preventDefault();
 
-        const $_ = $(e.currentTarget).closest('.less-more');
-        const $ruler = $_.find('.less-more__ruler');
-        const $crop = $_.find('.less-more__crop');
+        const $_ = $(e.currentTarget).closest(".less-more");
+        const $ruler = $_.find(".less-more__ruler");
+        const $crop = $_.find(".less-more__crop");
 
-        const isActive = $(e.currentTarget).hasClass('active');
+        const isActive = $(e.currentTarget).hasClass("active");
 
-        if ( !isActive ) {
-            $(e.currentTarget).addClass('active');
-            $crop.css('max-height', $ruler.height());
+        if (!isActive) {
+            $(e.currentTarget).addClass("active");
+            $crop.css("max-height", $ruler.height());
         } else {
-            $(e.currentTarget).removeClass('active');
-            $crop.attr('style', '');
+            $(e.currentTarget).removeClass("active");
+            $crop.attr("style", "");
         }
     },
 
     init() {
-        $(document).on('click', '.less-more__button', this.toggle.bind(this));
-    }
-
+        $(document).on("click", ".less-more__button", this.toggle.bind(this));
+    },
 };
 
-
 export default LessMore;
-
