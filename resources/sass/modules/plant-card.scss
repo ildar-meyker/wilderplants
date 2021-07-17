@@ -179,15 +179,10 @@
             li {
                 float: none;
                 display: inline-block;
-                border: 1px solid #b8b8b8;
                 width: 30px !important;
                 height: 30px !important;
                 border-radius: 0 !important;
                 margin: 0 5px;
-
-                &.active {
-                    border-color: #000;
-                }
             }
         }
     }
@@ -197,8 +192,8 @@
     .plant-card {
         .lSPager {
             li {
-                width: 90px !important;
-                height: 90px !important;
+                width: 100px !important;
+                height: 100px !important;
             }
         }
     }
