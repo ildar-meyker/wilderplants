@@ -1888,7 +1888,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .article p {
+  .article {
     font-size: 18px;
   }
 }
@@ -2810,7 +2810,7 @@ a:hover {
   margin-top: 15px;
 }
 .plant-story__text {
-  max-height: 15.9em;
+  max-height: 15.3em;
   overflow: hidden;
 }
 .plant-story__title-1 {

@@ -1,5 +1,4 @@
 .article {
-
     font-size: 19px;
 
     h3 {
@@ -34,14 +33,10 @@
             margin-bottom: 0;
         }
     }
-
 }
 
 @media (min-width: 768px) {
-
     .article {
-        p {
-            font-size: 18px;
-        }
+        font-size: 18px;
     }
 }
