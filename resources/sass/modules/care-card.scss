@@ -19,10 +19,6 @@
     &__right {
         margin-top: 30px;
         text-align: center;
-
-        img {
-            width: 80%;
-        }
     }
 }
 
@@ -38,6 +34,12 @@
         &__title-1,
         &__title-2 {
             text-align: left;
+        }
+
+        &__title-2 {
+            div {
+                display: inline-block;
+            }
         }
 
         &__left {

@@ -4,7 +4,7 @@
     {{--  header --}}
     <header class="header header--fixed">
 
-        <div class="container">
+        <div class="container container--wide">
             <div class="header__inner">
                 
                 {{--  topbar --}}
@@ -89,7 +89,7 @@
 
     {{--  plant-card --}}
     <section class="plant-card">
-        <div class="container">
+        <div class="container container--wide">
             <div class="plant-card__row">
                 <div class="plant-card__col-images">
                     <ul class="plant-card__slides" id="photos-slider">
@@ -214,7 +214,7 @@
     <section class="quote">
         <div class="container">
             <div class="quote__text">
-                Aglaonemas belong to the Araceae, a family of flowering plants. Their flowers grow in clusters called inflorescence. While they rarely flower, you might find the females hiding at the bottom while the males grow higher up in between leaves.
+                The Monstera's iconic splits tyically only occur in the plant's more mature leaves, and only if the plant is placed in ideal conditions. If yours has plenty of light but no splits, just be patient!
             </div>
         </div>
     </section>
@@ -309,7 +309,8 @@
                 <div class="care-card__left">
                     <h2 class="h2 h2--light care-card__title-1">Care for your Aglaonema Pink Like a Pro!</h2>
                     <h3 class="care-card__title-2">
-                        Check out it's personal <a href="#" class="button-link care-card__link">CARE CARD</a>
+                        Check out it's personal 
+                        <div><a href="#" class="button-link care-card__link">CARE CARD</a></div>
                     </h3>
                 </div>
                 <div class="care-card__right">

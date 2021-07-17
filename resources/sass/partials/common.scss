@@ -182,6 +182,12 @@ a {
 
     .container {
         padding: 0 15px;
+        max-width: 1020px;
+        margin: 0 auto;
+
+        &--wide {
+            max-width: 1280px;
+        }
     }
 
     .h2 {
@@ -194,15 +200,5 @@ a {
 
     .h5 {
         font-size: 22px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1240px;
-
-        &--wide {
-            max-width: 1280px;
-        }
     }
 }

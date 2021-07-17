@@ -4,7 +4,7 @@
     {{--  header --}}
     <header class="header">
 
-        <div class="container">
+        <div class="container container--wide">
             <div class="header__inner">
                 
                 {{--  topbar --}}
