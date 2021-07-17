@@ -9,6 +9,7 @@ import CustomForm from "./modules/CustomForm";
 import SuperPowers from "./modules/SuperPowers";
 import InfoPopup from "./modules/InfoPopup";
 import LessMore from "./modules/LessMore";
+import "./modules/PlantTypesSlider";
 
 import Vue from "vue";
 import vClickOutside from "v-click-outside";

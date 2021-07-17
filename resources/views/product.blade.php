@@ -261,24 +261,43 @@
     {{-- /origin-map --}}
 
     {{--  plant-types --}}
-    <section class="plant-types">
+    <section class="plant-types"  id="plant-types">
         <div class="container">
-            <h2 class="h2 h2--light text-center">Aglaonema</h2>
+            <h2 class="h2 h2--light text-center">Monstera family</h2>
             <h3 class="h5 plant-types__title-2">This plant comes in different varieties.</h3>
-            <ul class="plant-types__list" id="types-slider">
-                <li class="plant-types__item">
-                    <a href="#" class="plant-types__image">
-                        <img src="/img/plant-types/1.webp" alt="">
-                    </a>
-                    <a href="#" class="plant-types__name">Red aglaonema</a>
-                </li>
-                <li class="plant-types__item">
-                    <a href="#" class="plant-types__image">
-                        <img src="/img/plant-types/2.webp" alt="">
-                    </a>
-                    <a href="#" class="plant-types__name">Aglaonema Silver Bay</a>
-                </li>
-            </ul>
+            <div class="plant-types__desc">
+                Note: the variegated ones (with light green or white foliage) need more light than their dark-leaf siblings.
+            </div>
+            <div class="plant-types__gallery">
+                <div class="plant-types__list">
+                    <div class="plant-types__col">
+                        <a href='#' class="plant-types__item">
+                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/mons_600x 1.jpg');"></span>
+                            <span class="plant-types__name">Variety A</span>
+                        </a>
+                    </div>
+                    <div class="plant-types__col">
+                        <a href='#' class="plant-types__item">
+                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/Monstera-Variegated 1.jpg');"></span>
+                            <span class="plant-types__name">Variety B</span>
+                        </a>
+                    </div>
+                    <div class="plant-types__col">
+                        <a href='#' class="plant-types__item">
+                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/ps18007_hanging_swis 1.jpg');"></span>
+                            <span class="plant-types__name">Variety C</span>
+                        </a>
+                    </div>
+                    <div class="plant-types__col">
+                        <a href='#' class="plant-types__item">
+                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/Monstera-Variegated 1.jpg');"></span>
+                            <span class="plant-types__name">Variety B</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="plant-types__prev"></a>
+                <a href="#" class="plant-types__next"></a>
+            </div>
         </div>
     </section>
     {{--  plant-types --}}
@@ -300,85 +319,6 @@
         </div>
     </section>
     {{-- /care-card --}}
-
-    {{--  try-this --}}
-    <section class="try-this">
-        <div class="container">
-            <h2 class="h2 h2--light text-center">Accessories</h2>
-       
-            <h3 class="h5 try-this__title-2">Houseplant starter kit</h3>
-       
-            <ul class="try-this__list" id="more-slider">
-
-                <li class="try-this__item">
-                    <div class="try-this__image">
-                        <img src="/img/try-this/1.jpg" alt="">
-                    </div>
-                    <div class="try-this__desc">
-                        <div class="try-this__name">Plant Mister Spray Bottle, FUBARBAR 10oz Best Hair Water Paint Oil Pressure Mist Empty Disinfection Spray Bottle for…</div>
-                        <div class="try-this__price">$8.99</div>
-                        <button type="button" class="button-border try-this__button">
-                            Quick view
-                        </button>
-                        <button type="button" class="button-filled try-this__button">
-                            Add to cart
-                        </button>
-                    </div>
-                </li>
-
-                <li class="try-this__item">
-                    <div class="try-this__image">
-                        <img src="/img/try-this/2.jpg" alt="">
-                    </div>
-                    <div class="try-this__desc">
-                        <div class="try-this__name">Burpee Natural & Organic GardenCoir, 8 quart, (1 Pack)</div>
-                        <div class="try-this__price">$11.99</div>
-                        <button type="button" class="button-border try-this__button">
-                            Quick view
-                        </button>
-                        <button type="button" class="button-filled try-this__button">
-                            Add to cart
-                        </button>
-                    </div>
-                </li>
-
-                <li class="try-this__item">
-                    <div class="try-this__image">
-                        <img src="/img/try-this/3.jpg" alt="">
-                    </div>
-                    <div class="try-this__desc">
-                        <div class="try-this__name">Fasmov Stainless Steel Watering Can with Long Spout Modern Style Watering Pot, 53oz/1.5L</div>
-                        <div class="try-this__price">$17.99</div>
-                        <button type="button" class="button-border try-this__button">
-                            Quick view
-                        </button>
-                        <button type="button" class="button-filled try-this__button">
-                            Add to cart
-                        </button>
-                    </div>
-                </li>
-
-                <li class="try-this__item">
-                    <div class="try-this__image">
-                        <img src="/img/try-this/4.jpg" alt="">
-                    </div>
-                    <div class="try-this__desc">
-                        <div class="try-this__name">IPPINKA Sustee Aquameter, Plaint Moisture Sensor Set of 2 (Green, Medium)</div>
-                        <div class="try-this__price">$14.95</div>
-                        <button type="button" class="button-border try-this__button">
-                            Quick view
-                        </button>
-                        <button type="button" class="button-filled try-this__button">
-                            Add to cart
-                        </button>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </section>
-    {{-- /try-this --}}
-
 
 	@include('partials.choosing')
     @include('partials.subscribe')

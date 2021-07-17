@@ -6,45 +6,124 @@
         text-align: center;
     }
 
+    &__desc {
+        margin: 0 auto;
+        margin-top: 15px;
+        max-width: 545px;
+        font-family: "Calluna Sans";
+        line-height: (25/16);
+        text-align: center;
+        color: #3e3e3e;
+    }
+
     &__list {
-        margin: 55px -30px 0 -30px;
         display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+
+    &__col {
+        margin-top: 22px;
+        padding: 0 8px;
+        flex: 0 0 auto;
+        width: 50%;
+        text-align: center;
     }
 
     &__item {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: 0 40px;
+        position: relative;
+
+        &,
+        > * {
+            display: block;
+        }
     }
 
     &__image {
-        display: block;
-        background: #f9f9f9;
+        max-width: 310px;
+        margin: 0 auto;
+        background-position: 50% 50%;
+        background-size: cover;
+
+        &:before {
+            content: " ";
+            padding-top: 100%;
+            display: block;
+        }
     }
 
     &__name {
-        display: block;
         margin-top: 10px;
-        font-family: "Calluna Sans", sans-serif;
-        letter-spacing: 1px;
-        line-height: 1.5;
         text-transform: uppercase;
-        text-align: center;
+        font-family: "Calluna Sans";
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .plant-types {
-        &__list {
-            margin-right: 50px;
-            margin-left: 50px;
+        &__desc {
+            margin-top: 25px;
+            font-size: 18px;
         }
 
-        &__item {
-            flex: 0 0 32%;
-            max-width: 32%;
+        &__gallery {
+            position: relative;
+            max-width: 930px;
             margin: 0 auto;
+            margin-top: 25px;
+        }
+
+        &__list {
+            flex-wrap: nowrap;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        &__col {
+            margin: 0;
+            width: 33.33%;
             padding: 0;
+        }
+
+        &__prev,
+        &__next {
+            display: none;
+            font-size: 64px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5em;
+            border: 1px solid lighten(#808080, 30%);
+
+            .lSSlideOuter ~ & {
+                display: block;
+            }
+
+            &:hover {
+                border-color: #808080;
+            }
+
+            &:before {
+                content: " ";
+                font-size: 0;
+                border: 5px solid transparent;
+                border-right-color: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -5px 0 0 -8px;
+            }
+        }
+
+        &__prev {
+            left: -110px;
+        }
+
+        &__next {
+            transform: scale(-1);
+            right: -110px;
         }
     }
 }
