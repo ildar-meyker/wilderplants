@@ -5,7 +5,9 @@
                 Сhoose your size
             </div>
             <div class="checkout__step__info">
-                <a href="#">Size chart</a>
+                <a href="#" data-src="/html/info/1" class="js-open-info"
+                    >Size chart</a
+                >
             </div>
             <div class="checkout__sizes">
                 <div
