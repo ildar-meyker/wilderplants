@@ -2999,7 +2999,7 @@ a:hover {
   }
   .care-card__row {
     display: flex;
-    margin: 0 85px;
+    align-items: center;
   }
   .care-card__title-1, .care-card__title-2 {
     text-align: left;
@@ -3008,16 +3008,15 @@ a:hover {
     display: inline-block;
   }
   .care-card__left {
-    flex: 0 0 45%;
-    max-width: 45%;
+    flex: 0 0 auto;
+    width: 50%;
+    padding-right: 50px;
   }
   .care-card__right {
-    flex: 0 0 55%;
-    max-width: 55%;
+    flex: 0 0 auto;
+    width: 50%;
     text-align: right;
-  }
-  .care-card__right img {
-    width: 75%;
+    margin-top: 0;
   }
   .care-card__link {
     margin-left: 0;

@@ -28,7 +28,7 @@
 
         &__row {
             display: flex;
-            margin: 0 85px;
+            align-items: center;
         }
 
         &__title-1,
@@ -43,18 +43,16 @@
         }
 
         &__left {
-            flex: 0 0 45%;
-            max-width: 45%;
+            flex: 0 0 auto;
+            width: 50%;
+            padding-right: 50px;
         }
 
         &__right {
-            flex: 0 0 55%;
-            max-width: 55%;
+            flex: 0 0 auto;
+            width: 50%;
             text-align: right;
-
-            img {
-                width: 75%;
-            }
+            margin-top: 0;
         }
 
         &__link {
