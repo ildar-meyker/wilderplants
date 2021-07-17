@@ -1,4 +1,4 @@
-.light-sm {
+.light {
     max-width: 940px;
     margin: 0 auto;
     background: linear-gradient(90deg, #f9e53421 0%, #ffb16926 100%);
@@ -43,7 +43,7 @@
 }
 
 @media (min-width: 768px) {
-    .light-sm {
+    .light {
         margin-top: 55px;
     }
 }

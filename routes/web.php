@@ -32,3 +32,7 @@ Route::get('/html/info/2', function () {
 Route::get('/html/info/light', function () {
     return view('info.light');
 });
+
+Route::get('/html/info/product', function () {
+    return view('info.product');
+});

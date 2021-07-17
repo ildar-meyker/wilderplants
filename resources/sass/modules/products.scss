@@ -19,12 +19,11 @@
     &__item {
         position: relative;
         border: 1px solid #b0b0b0;
-        
 
         &:before,
         &:after {
-            content: ' ';
-            transition: .3s all;
+            content: " ";
+            transition: 0.3s all;
             position: absolute;
             top: 0;
             left: 0;
@@ -39,14 +38,13 @@
         }
 
         &:after {
-            content: 'SEE OPTIONS';
+            content: "SEE OPTIONS";
             padding-top: 200px;
             text-align: center;
             color: #fff;
         }
 
         &:hover {
-
             &:before {
                 visibility: visible;
                 opacity: 0.5;
@@ -57,28 +55,23 @@
                 opacity: 1;
             }
 
-            
-
             .products__like {
                 .icomoon-heart-o {
-                    filter: invert(1)!important;
+                    filter: invert(1) !important;
                     opacity: 1;
-                } 
+                }
             }
 
             .products__icons i {
-                filter: invert(1)!important;
+                filter: invert(1) !important;
             }
 
             .products__name {
                 position: relative;
                 z-index: 10;
-                color: #fff;   
+                color: #fff;
             }
-
-
         }
-
     }
 
     &__link {
@@ -106,14 +99,14 @@
 
         .icomoon-heart {
             display: none;
-            color: #F3C093;
+            color: #f3c093;
         }
 
         &.active {
             .icomoon-heart-o {
                 display: none;
             }
-    
+
             .icomoon-heart {
                 display: inline;
             }
@@ -132,13 +125,13 @@
 
     &__footer {
         text-align: center;
-        background: rgba(#f3c093, .22);
+        background: rgba(#f3c093, 0.22);
         padding: 23px 0;
     }
 
     &__name {
         text-transform: uppercase;
-        font-family: 'Calluna Sans', sans-serif;
+        font-family: "Calluna Sans", sans-serif;
         font-size: 15px;
         font-weight: 400;
     }
@@ -158,38 +151,36 @@
     }
 
     &__icon-air {
-        background: url('/img/svg-icons/air.svg') no-repeat;
+        background: url("/img/powers/air.svg") no-repeat;
     }
 
     &__icon-glasses {
-        background: url('/img/svg-icons/glasses.svg') no-repeat;
+        background: url("/img/powers/glasses.svg") no-repeat;
     }
 
     &__icon-moon {
-        background: url('/img/svg-icons/moon.svg') no-repeat;
+        background: url("/img/powers/moon.svg") no-repeat;
     }
 
     &__icon-bacteria {
-        background: url('/img/svg-icons/bacteria.svg') no-repeat;
+        background: url("/img/powers/bacteria.svg") no-repeat;
     }
 
     &__icon-footprint {
-        background: url('/img/svg-icons/footprint.svg') no-repeat;
+        background: url("/img/powers/footprint.svg") no-repeat;
     }
 
     &__icon-nasa {
-        background: url('/img/svg-icons/nasa.svg') no-repeat;
+        background: url("/img/powers/nasa.svg") no-repeat;
     }
 
     &__icon-plain {
-        background: url('/img/svg-icons/plain.svg') no-repeat;
+        background: url("/img/powers/plain.svg") no-repeat;
     }
-
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
     .products {
-
         padding: 65px 0;
 
         &__filter {
@@ -228,9 +219,8 @@
     }
 }
 
-@media  (min-width: 1200px) {
+@media (min-width: 1200px) {
     .products {
-
         &__col-side {
             flex: 0 0 25%;
             max-width: 25%;

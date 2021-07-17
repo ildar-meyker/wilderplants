@@ -1,0 +1,144 @@
+.quick-view {
+    &__images {
+        .lSPager {
+            margin-top: 15px !important;
+
+            li {
+                padding: 0 6px !important;
+                opacity: 0.2;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+
+            a {
+                width: 10px !important;
+                height: 10px !important;
+                background: #000 !important;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 20px;
+        font-family: "Freight Display Bold";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: (33/22);
+    }
+
+    &__price {
+        margin-top: 15px;
+        font-family: "Calluna Sans";
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__amazon {
+        display: flex;
+        align-items: center;
+        margin: 25px 0;
+
+        &__icon {
+            flex: 0 0 auto;
+            width: 35px;
+        }
+
+        &__text {
+            padding-left: 12px;
+            font-family: "Calluna Sans";
+            font-weight: 400;
+            line-height: (20/16);
+        }
+    }
+
+    &__slide {
+        display: none;
+
+        &:first-child,
+        .lightSlider & {
+            display: block;
+        }
+    }
+
+    &__apply {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .quick-view {
+        display: flex;
+        align-items: center;
+
+        &__images {
+            position: relative;
+            flex: 0 0 auto;
+            width: 60%;
+            padding: 0 60px;
+        }
+
+        &__desc {
+            padding-left: 60px;
+            flex: 0 0 auto;
+            width: 40%;
+        }
+
+        &__title {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        &__price {
+            font-weight: 700;
+        }
+
+        &__apply {
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        &__prev,
+        &__next {
+            display: none;
+            font-size: 50px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5em;
+            border: 1px solid lighten(#808080, 30%);
+
+            .lSSlideOuter ~ & {
+                display: block;
+            }
+
+            &:hover {
+                border-color: #808080;
+            }
+
+            &:before {
+                content: " ";
+                font-size: 0;
+                border: 5px solid transparent;
+                border-right-color: #000;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -5px 0 0 -8px;
+            }
+        }
+
+        &__prev {
+            left: 0;
+        }
+
+        &__next {
+            transform: scale(-1);
+            right: 0;
+        }
+    }
+}

@@ -294,7 +294,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/AGLA-PI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/AGLA-PI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA PINK</div>
@@ -314,7 +314,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/AGLA-SB1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/AGLA-SB1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA SILVER BAY</div>
@@ -333,7 +333,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOC-AM1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOC-AM1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AIR PLANT</div>
@@ -351,7 +351,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOC-OD1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOC-OD1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALBERTA SPRUCE</div>
@@ -368,7 +368,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOE-HU1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOE-HU1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA CALIDORA</div>
@@ -386,7 +386,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOE-VE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOE-VE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA POLLY</div>
@@ -404,7 +404,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ANTH-AN1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ANTH-AN1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE HEDGEHOG</div>
@@ -422,7 +422,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ASPA-SE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ASPA-SE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE VERA</div>
@@ -442,7 +442,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ASPL-NI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ASPL-NI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ANTHURIUM</div>
@@ -461,7 +461,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/AGLA-PI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/AGLA-PI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA PINK</div>
@@ -480,7 +480,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/AGLA-SB1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/AGLA-SB1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AGLAONEMA SILVER BAY</div>
@@ -499,7 +499,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOC-AM1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOC-AM1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">AIR PLANT</div>
@@ -517,7 +517,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOC-OD1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOC-OD1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALBERTA SPRUCE</div>
@@ -534,7 +534,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOE-HU1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOE-HU1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA CALIDORA</div>
@@ -552,7 +552,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ALOE-VE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ALOE-VE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOCASIA POLLY</div>
@@ -570,7 +570,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ANTH-AN1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ANTH-AN1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE HEDGEHOG</div>
@@ -588,7 +588,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ASPA-SE1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ASPA-SE1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ALOE VERA</div>
@@ -608,7 +608,7 @@
                         <div class="products__col">
                             <div class="products__item">
                                 <div class="products__image">
-                                    <img src="{{ asset('/img/products/ASPL-NI1.png') }}" alt="">
+                                    <img src="{{ asset('/img/temp/products/ASPL-NI1.png') }}" alt="">
                                 </div>
                                 <div class="products__footer">
                                     <div class="products__name">ANTHURIUM</div>

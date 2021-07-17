@@ -5,7 +5,7 @@ const CatalogFilter = {
         $("body").addClass("locked");
         $("#filter").addClass("animated");
 
-        setTimeout(function () {
+        setTimeout(function() {
             $("#filter").addClass("opened");
         }, 10);
     },
@@ -14,7 +14,7 @@ const CatalogFilter = {
         $("body").removeClass("locked");
         $("#filter").removeClass("opened");
 
-        setTimeout(function () {
+        setTimeout(function() {
             $("#filter").removeClass("animated");
         }, 300);
     },
@@ -58,7 +58,7 @@ const CatalogFilter = {
                 this.closePanel();
             }
         });
-    },
+    }
 };
 
 export default CatalogFilter;

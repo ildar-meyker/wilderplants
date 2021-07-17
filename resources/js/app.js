@@ -8,6 +8,7 @@ import CatalogFilter from "./modules/CatalogFilter";
 import CustomForm from "./modules/CustomForm";
 import SuperPowers from "./modules/SuperPowers";
 import InfoPopup from "./modules/InfoPopup";
+import ProductPopup from "./modules/ProductPopup";
 import LessMore from "./modules/LessMore";
 import "./modules/PlantTypesSlider";
 
@@ -22,6 +23,7 @@ $(function() {
     CustomForm.init();
     SuperPowers.init();
     InfoPopup.init();
+    ProductPopup.init();
     LessMore.init();
 
     $("#photos-slider").lightSlider({
@@ -29,11 +31,12 @@ $(function() {
         item: 1,
         loop: false,
         slideMargin: 0,
-        thumbItem: 3
+        thumbItem: 3,
+        controls: false
     });
 });
 
-new Vue({
+window.Checkout = new Vue({
     el: "#checkout",
     components: { Checkout }
 });

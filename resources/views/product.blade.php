@@ -93,14 +93,14 @@
             <div class="plant-card__row">
                 <div class="plant-card__col-images">
                     <ul class="plant-card__slides" id="photos-slider">
-                        <li class="plant-card__slides__item" data-thumb="/img/plant-card/3.webp">
-                            <img src="/img/plant-card/3.webp" alt="">
+                        <li class="plant-card__slides__item" data-thumb="/img/temp/plant-card/3.webp">
+                            <img src="/img/temp/plant-card/3.webp" alt="">
                         </li>
-                        <li class="plant-card__slides__item" data-thumb="/img/plant-card/4.webp">
-                            <img src="/img/plant-card/4.webp" alt="">
+                        <li class="plant-card__slides__item" data-thumb="/img/temp/plant-card/4.webp">
+                            <img src="/img/temp/plant-card/4.webp" alt="">
                         </li>
-                        <li class="plant-card__slides__item" data-thumb="/img/plant-card/5.webp">
-                            <img src="/img/plant-card/5.webp" alt="">
+                        <li class="plant-card__slides__item" data-thumb="/img/temp/plant-card/5.webp">
+                            <img src="/img/temp/plant-card/5.webp" alt="">
                         </li>
                     </ul>
 
@@ -146,18 +146,18 @@
     </section>
     {{--  plant-card --}}
 
-    {{--  light-sm --}}
-    <section class="light-sm">
+    {{--  light --}}
+    <section class="light">
         <div class="container">
-            <div class="light-sm__center">
-                <div class="light-sm__title-1">Light</div>
-                <div class="light-sm__title-2">LOW TO BRIGHT INDIRECT</div>
-                <a href="#" class="light-sm__link js-open-info" data-src="/html/info/light">Light Guide</a>
-                <img src="/img/svg-icons/light.svg" alt="" class="light-sm__image">
+            <div class="light__center">
+                <div class="light__title-1">Light</div>
+                <div class="light__title-2">LOW TO BRIGHT INDIRECT</div>
+                <a href="#" class="light__link js-open-info" data-src="/html/info/light">Light Guide</a>
+                <img src="/img/light/light.svg" alt="" class="light__image">
             </div>
         </div>
     </section>
-    {{-- /light-sm --}}
+    {{-- /light --}}
 
     {{--  powers --}}
     <section class="powers" id="super-powers">
@@ -272,25 +272,25 @@
                 <div class="plant-types__list">
                     <div class="plant-types__col">
                         <a href='#' class="plant-types__item">
-                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/mons_600x 1.jpg');"></span>
+                            <span class="plant-types__image" style="background-image: url('/img/temp/plant-types/1/mons_600x 1.jpg');"></span>
                             <span class="plant-types__name">Variety A</span>
                         </a>
                     </div>
                     <div class="plant-types__col">
                         <a href='#' class="plant-types__item">
-                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/Monstera-Variegated 1.jpg');"></span>
+                            <span class="plant-types__image" style="background-image: url('/img/temp/plant-types/1/Monstera-Variegated 1.jpg');"></span>
                             <span class="plant-types__name">Variety B</span>
                         </a>
                     </div>
                     <div class="plant-types__col">
                         <a href='#' class="plant-types__item">
-                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/ps18007_hanging_swis 1.jpg');"></span>
+                            <span class="plant-types__image" style="background-image: url('/img/temp/plant-types/1/ps18007_hanging_swis 1.jpg');"></span>
                             <span class="plant-types__name">Variety C</span>
                         </a>
                     </div>
                     <div class="plant-types__col">
                         <a href='#' class="plant-types__item">
-                            <span class="plant-types__image" style="background-image: url('/img/plant-types/1/Monstera-Variegated 1.jpg');"></span>
+                            <span class="plant-types__image" style="background-image: url('/img/temp/plant-types/1/Monstera-Variegated 1.jpg');"></span>
                             <span class="plant-types__name">Variety B</span>
                         </a>
                     </div>
@@ -320,6 +320,7 @@
         </div>
     </section>
     {{-- /care-card --}}
+
 
 	@include('partials.choosing')
     @include('partials.subscribe')

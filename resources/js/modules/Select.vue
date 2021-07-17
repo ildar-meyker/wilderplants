@@ -76,7 +76,12 @@
                             </div>
                             <button
                                 type="button"
-                                class="button-border button-border--size-3"
+                                class="
+                                    button-ouline-black
+                                    button-ouline-black--size-3
+                                    js-open-product
+                                "
+                                @click.stop="openPopup('/html/info/product')"
                             >
                                 LEARN MORE
                             </button>
@@ -96,6 +101,10 @@
 </template>
 
 <script>
+import $ from "jquery";
+import "lightslider";
+import ProductPopup from "./ProductPopup";
+
 export default {
     props: {
         productType: {
@@ -135,7 +144,9 @@ export default {
     },
 
     methods: {
-        closeDropdown() {
+        closeDropdown(event) {
+            if ($(event.target).closest(".popup").length) return;
+
             this.showDropdown = false;
         },
 
@@ -146,6 +157,10 @@ export default {
         setCheckedProduct(product) {
             this.showDropdown = false;
             this.checkedProduct = product;
+        },
+
+        openPopup(src) {
+            ProductPopup.open(src);
         },
 
         reset() {

@@ -1,3 +1,6 @@
+import $ from "jquery";
+import "lightslider";
+
 const Slider = {
     _slider: null,
 

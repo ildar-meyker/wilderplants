@@ -13,7 +13,7 @@
         <div class="choosing__list">
             <div class="choosing__item">
                 <div class="choosing__image">
-                    <img src="{{ asset('/img/svg-icons/icon-girl.svg') }}" alt="">
+                    <img src="{{ asset('/img/choosing/girl.svg') }}" alt="">
                 </div>
                 <div class="choosing__desc">
                     Tell us about yourself and your place
@@ -21,7 +21,7 @@
             </div>
             <div class="choosing__item">
                 <div class="choosing__image">
-                    <img src="{{ asset('/img/svg-icons/icon-plants.svg') }}" alt="">
+                    <img src="{{ asset('/img/choosing/plants.svg') }}" alt="">
                 </div>
                 <div class="choosing__desc">
                     Get your personalized plant collection
@@ -29,7 +29,7 @@
             </div>
             <div class="choosing__item">
                 <div class="choosing__image">
-                    <img src="{{ asset('/img/svg-icons/icon-paper.svg') }}" alt="">
+                    <img src="{{ asset('/img/choosing/paper.svg') }}" alt="">
                 </div>
                 <div class="choosing__desc">
                     Learn simple care rituals for beautiful plants

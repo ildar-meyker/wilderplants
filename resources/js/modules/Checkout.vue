@@ -51,10 +51,7 @@
         <div class="checkout__total">
             <div class="checkout__total__price">{{ totalPrice }}</div>
             <div class="checkout__total__ctrl">
-                <button
-                    type="button"
-                    class="button-filled button-filled--size-2"
-                >
+                <button type="button" class="button-black button-black--size-2">
                     Add to cart
                 </button>
             </div>
@@ -160,7 +157,7 @@ export default {
                 .get(`/fake/pots.json`, {
                     params: {
                         size: this.checkedSize,
-                        plant: this.checkedPlant.id,
+                        plant: this.checkedPlant && this.checkedPlant.id,
                     },
                 })
                 .then((response) => {
@@ -178,8 +175,8 @@ export default {
                 .get(`/fake/accessories.json`, {
                     params: {
                         size: this.checkedSize,
-                        plant: this.checkedPlant.id,
-                        pot: this.checkedPot.id,
+                        plant: this.checkedPlant && this.checkedPlant.id,
+                        pot: this.checkedPot && this.checkedPot.id,
                     },
                 })
                 .then((response) => {

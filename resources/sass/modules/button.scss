@@ -1,0 +1,104 @@
+.button-link {
+    display: inline-block;
+    padding: 10px 0;
+    font-family: "Brown", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #000;
+
+    &--type-2 {
+        letter-spacing: 2px;
+    }
+
+    &--size-2 {
+        font-size: 17px;
+    }
+
+    &:hover {
+        color: #f3c093;
+    }
+}
+
+.button-ouline-black {
+    display: inline-block;
+    padding: 9px 15px;
+    font-family: "Calluna Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 1px #000;
+    color: #000;
+
+    &--size-2 {
+        padding: 14px 27px;
+        font-size: 17px;
+    }
+
+    &--size-3 {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    &:hover {
+        box-shadow: none;
+        background: #f3c093;
+        color: #000;
+    }
+}
+
+.button-black {
+    display: inline-block;
+    padding: 9px 15px;
+    font-family: "Calluna Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background: #000;
+    color: #fff;
+
+    &--size-2 {
+        padding: 14px 27px;
+        font-size: 17px;
+    }
+
+    &:hover {
+        background: #f3c093;
+        color: #000;
+    }
+}
+
+.button-orange {
+    display: inline-block;
+    min-width: 190px;
+    padding: 6px 10px;
+    background: #f3c093;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Calluna Sans";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+@media (min-width: 768px) {
+    .button-black {
+        font-size: 16px;
+    }
+
+    .button-ouline-black {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .button-orange {
+        padding: 9px 10px;
+    }
+}
