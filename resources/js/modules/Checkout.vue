@@ -70,11 +70,14 @@ export default {
             type: Number,
             required: true,
         },
+        availableSizes: {
+            type: Array,
+            required: true,
+        },
     },
 
     data() {
         return {
-            availableSizes: [4, 6, 8, 10],
             checkedSize: null,
 
             loadedPlants: null,

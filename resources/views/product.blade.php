@@ -137,7 +137,7 @@
                     </div>
 
                     <div class="checkout" id="checkout">
-                        <Checkout :default-size="4"></Checkout>
+                        <Checkout :default-size="4" :available-sizes="[4, 6, 8, 10]"></Checkout>
                     </div>
 
                 </div>
