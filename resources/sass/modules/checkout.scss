@@ -11,6 +11,12 @@
         rgba(205, 147, 255, 0.07) 100%
     );
 
+    &__loading {
+        transform-origin: 0 0;
+        transform: scale(0.5);
+        height: 40px;
+    }
+
     &__step {
         margin-bottom: 35px;
 
@@ -161,6 +167,7 @@
             display: flex;
             align-items: center;
             font-family: "Calluna Sans";
+            margin-bottom: 15px;
 
             &__image {
                 flex: 1 1 10%;

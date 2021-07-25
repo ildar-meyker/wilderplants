@@ -129,7 +129,7 @@
                                     <div class="filter__title">
                                         WINDOW DIRECTION
                                     </div>
-                                    <a href="#" class="filter__info filter__info--for-header js-open-info" data-src="/html/info/1">
+                                    <a href="#" class="filter__info filter__info--for-header js-open-info" data-src="/ajax/popup-example">
                                         <i class="icomoon-information-solid"></i>
                                     </a>
                                 </div>
@@ -242,7 +242,7 @@
                                                 <input type="checkbox">
                                                 <span>Air-Purifying</span>
                                             </label>
-                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/2">
+                                            <a href="#" class="filter__info js-open-info" data-src="/ajax/popup-example">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -251,7 +251,7 @@
                                                 <input type="checkbox">
                                                 <span>Traveller-Friendly</span>
                                             </label>
-                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/1">
+                                            <a href="#" class="filter__info js-open-info" data-src="/ajax/popup-example">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -260,7 +260,7 @@
                                                 <input type="checkbox">
                                                 <span>Pet-Friendly</span>
                                             </label>
-                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/1">
+                                            <a href="#" class="filter__info js-open-info" data-src="/ajax/popup-example">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>
@@ -269,7 +269,7 @@
                                                 <input type="checkbox">
                                                 <span>Easy Care</span>
                                             </label>
-                                            <a href="#" class="filter__info js-open-info" data-src="/html/info/2">
+                                            <a href="#" class="filter__info js-open-info" data-src="/ajax/popup-example">
                                                 <i class="icomoon-information-solid"></i>
                                             </a>
                                         </div>

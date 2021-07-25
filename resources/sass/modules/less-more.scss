@@ -1,12 +1,10 @@
-
 .less-more {
-    
     &__crop {
-        transition: .3s all;
+        transition: 0.3s all;
     }
 
     &__button {
-
+        display: none;
         span {
             &:last-child {
                 display: none;
@@ -23,7 +21,8 @@
             }
         }
 
+        &.shown {
+            display: inline-block;
+        }
     }
-
-
 }

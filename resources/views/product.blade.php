@@ -137,7 +137,14 @@
                     </div>
 
                     <div class="checkout" id="checkout">
-                        <Checkout :default-size="4" :available-sizes="[4, 6, 8, 10]"></Checkout>
+                        <Checkout 
+                            :default-size="4" 
+                            :available-sizes="[4, 6, 8, 10]" 
+                            quick-view-url="/ajax/quick-view"
+                            products-url="/ajax/products"
+                            ></Checkout>
+                        
+                        <textarea id="checkout-results"></textarea>
                     </div>
 
                 </div>
@@ -152,7 +159,7 @@
             <div class="light__center">
                 <div class="light__title-1">Light</div>
                 <div class="light__title-2">LOW TO BRIGHT INDIRECT</div>
-                <a href="#" class="light__link js-open-info" data-src="/html/info/light">Light Guide</a>
+                <a href="#" class="light__link js-open-info" data-src="/ajax/popup-example">Light Guide</a>
                 <img src="/img/light/light.svg" alt="" class="light__image">
             </div>
         </div>

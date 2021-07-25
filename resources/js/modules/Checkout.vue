@@ -5,7 +5,7 @@
                 Сhoose your size
             </div>
             <div class="checkout__step__info">
-                <a href="#" data-src="/html/info/1" class="js-open-info"
+                <a href="#" data-src="/ajax/popup-example" class="js-open-info"
                     >Size chart</a
                 >
             </div>
@@ -26,32 +26,44 @@
 
         <div class="checkout__step">
             <Select
-                :products="loadedPlants"
-                productType="plant"
-                @change="setCheckedPlant"
+                type="plant"
+                :loading="loadingPlants"
+                :products="plants"
+                @change="setSelectedPlants"
+                :quickViewUrl="quickViewUrl"
             ></Select>
         </div>
 
-        <div class="checkout__step" v-show="checkedPlant">
+        <div class="checkout__step" v-show="selectedPlants.length">
             <Select
-                :products="loadedPots"
-                productType="pot"
-                @change="setCheckedPot"
+                type="pot"
+                :loading="loadingPots"
+                :products="pots"
+                @change="setSelectedPots"
+                :quickViewUrl="quickViewUrl"
             ></Select>
         </div>
 
-        <div class="checkout__step" v-show="checkedPot">
+        <div class="checkout__step" v-show="selectedPots.length">
             <Select
-                :products="loadedAccessories"
-                productType="accessory"
-                @change="setCheckedAccessory"
+                type="accessory"
+                :multiple="true"
+                :loading="loadingAccessories"
+                :products="accessories"
+                @change="setSelectedAccessories"
+                :quickViewUrl="quickViewUrl"
             ></Select>
         </div>
 
         <div class="checkout__total">
             <div class="checkout__total__price">{{ totalPrice }}</div>
             <div class="checkout__total__ctrl">
-                <button type="button" class="button-black button-black--size-2">
+                <button
+                    type="button"
+                    class="button-black button-black--size-2"
+                    :disabled="!selectedPlants.length"
+                    @click="addToCart"
+                >
                     Add to cart
                 </button>
             </div>
@@ -74,20 +86,31 @@ export default {
             type: Array,
             required: true,
         },
+        quickViewUrl: {
+            type: String,
+            required: true,
+        },
+        productsUrl: {
+            type: String,
+            required: true,
+        },
     },
 
     data() {
         return {
             checkedSize: null,
 
-            loadedPlants: null,
-            checkedPlant: null,
+            plants: [],
+            loadingPlants: false,
+            selectedPlants: [],
 
-            loadedPots: null,
-            checkedPot: null,
+            pots: [],
+            loadingPots: false,
+            selectedPots: [],
 
-            loadedAccessories: null,
-            checkedAccessory: null,
+            accessories: [],
+            loadingAccessories: false,
+            selectedAccessories: [],
         };
     },
 
@@ -95,19 +118,11 @@ export default {
         totalPrice() {
             let total = 0;
 
-            if (this.checkedPlant) {
-                total += parseInt(this.checkedPlant.price);
-            }
+            total += this.sum(this.selectedPlants);
+            total += this.sum(this.selectedPots);
+            total += this.sum(this.selectedAccessories);
 
-            if (this.checkedPot) {
-                total += parseInt(this.checkedPot.price);
-            }
-
-            if (this.checkedAccessory) {
-                total += parseInt(this.checkedAccessory.price);
-            }
-
-            return "$" + total;
+            return "$" + total.toFixed(2);
         },
     },
 
@@ -118,75 +133,112 @@ export default {
     },
 
     methods: {
+        sum(products) {
+            return products.reduce((sum, product) => {
+                return sum + parseFloat(product.price);
+            }, 0);
+        },
+
+        getIds(products) {
+            return products.map((product) => {
+                return product.id;
+            });
+        },
+
+        addToCart() {
+            $("#checkout-results").val(
+                JSON.stringify({
+                    plants: this.getIds(this.selectedPlants),
+                    pots: this.getIds(this.selectedPots),
+                    accessories: this.getIds(this.selectedAccessories),
+                })
+            );
+        },
+
         setCheckedSize(size) {
             this.checkedSize = size;
         },
 
-        setCheckedPlant(product) {
-            this.checkedPlant = product;
+        setSelectedPlants(products) {
+            this.selectedPlants = products;
             this.getPots();
         },
 
-        setCheckedPot(product) {
-            this.checkedPot = product;
+        setSelectedPots(products) {
+            this.selectedPots = products;
             this.getAccessories();
         },
 
-        setCheckedAccessory(product) {
-            this.checkedAccessory = product;
+        setSelectedAccessories(products) {
+            this.selectedAccessories = products;
         },
 
         getPlants() {
-            this.loadedPlants = null;
+            this.loadingPlants = true;
+            this.plants = [];
 
             axios
-                .get(`/fake/plants-${this.checkedSize}.json`, {
+                .get(this.productsUrl, {
                     params: {
+                        type: "plants",
                         size: this.checkedSize,
                     },
                 })
                 .then((response) => {
-                    this.loadedPlants = response.data;
+                    this.plants = response.data;
                 })
                 .catch((error) => {
                     console.log(error);
+                })
+                .finally(() => {
+                    this.loadingPlants = false;
                 });
         },
 
         getPots() {
-            this.loadedPots = null;
+            this.loadingPots = true;
+            this.pots = [];
 
             axios
-                .get(`/fake/pots.json`, {
+                .get(this.productsUrl, {
                     params: {
+                        type: "pots",
                         size: this.checkedSize,
-                        plant: this.checkedPlant && this.checkedPlant.id,
+                        plant: this.selectedPlants[0].id,
                     },
                 })
                 .then((response) => {
-                    this.loadedPots = response.data;
+                    this.pots = response.data;
                 })
                 .catch((error) => {
                     console.log(error);
+                })
+                .finally(() => {
+                    this.loadingPots = false;
                 });
         },
 
         getAccessories() {
-            this.loadedAccessories = null;
+            this.loadingAccessories = true;
+            this.accessories = [];
 
             axios
-                .get(`/fake/accessories.json`, {
+                .get(this.productsUrl, {
                     params: {
+                        type: "accessories",
                         size: this.checkedSize,
-                        plant: this.checkedPlant && this.checkedPlant.id,
-                        pot: this.checkedPot && this.checkedPot.id,
+                        plant: this.selectedPlants[0].id,
+                        pot: this.selectedPots[0].id,
                     },
                 })
                 .then((response) => {
-                    this.loadedAccessories = response.data;
+                    this.accessories = response.data;
                 })
                 .catch((error) => {
                     console.log(error);
+                })
+                .finally(() => {
+                    this.loadingAccessories = false;
                 });
         },
     },

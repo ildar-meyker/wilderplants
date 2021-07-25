@@ -68,7 +68,12 @@
         font-size: 17px;
     }
 
-    &:hover {
+    &:disabled {
+        opacity: 0.2;
+        cursor: default;
+    }
+
+    &:not(:disabled):hover {
         background: #f3c093;
         color: #000;
     }
