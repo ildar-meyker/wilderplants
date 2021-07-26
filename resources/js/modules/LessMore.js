@@ -1,6 +1,23 @@
 import $ from "jquery";
 
 const LessMore = {
+    checkHeight($scope) {
+        $(".less-more", $scope).each(function() {
+            if (
+                $(this)
+                    .find(".less-more__ruler")
+                    .height() >
+                $(this)
+                    .find(".less-more__crop")
+                    .height()
+            ) {
+                $(this)
+                    .find(".less-more__button")
+                    .addClass("shown");
+            }
+        });
+    },
+
     toggle(e) {
         e.preventDefault();
 
@@ -21,20 +38,8 @@ const LessMore = {
 
     init() {
         $(document).on("click", ".less-more__button", this.toggle.bind(this));
-        $(".less-more").each(function() {
-            if (
-                $(this)
-                    .find(".less-more__ruler")
-                    .height() >
-                $(this)
-                    .find(".less-more__crop")
-                    .height()
-            ) {
-                $(this)
-                    .find(".less-more__button")
-                    .addClass("shown");
-            }
-        });
+
+        this.checkHeight();
     }
 };
 

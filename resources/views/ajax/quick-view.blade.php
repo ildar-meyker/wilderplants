@@ -36,9 +36,10 @@
 
         <div class="quick-view__text">
             <div class="less-more">
-                <div class="article less-more">
+                <div class="article less-more__crop plant-story__text">
                     <div class="less-more__ruler">
                         <p>
+                            Make sure this fitsby entering your model number. ✔Stainless Steel Spray Bottle: Body Material Stainless Steel 304, Spray head is common plastic, Long service life, not easy to damage. ✔Convenient To Use: Including hair spray, essential oils, watering plants, cleaning fluids and more, the spray bottle is an ideal for succulent plant cleaning.
                             Make sure this fitsby entering your model number. ✔Stainless Steel Spray Bottle: Body Material Stainless Steel 304, Spray head is common plastic, Long service life, not easy to damage. ✔Convenient To Use: Including hair spray, essential oils, watering plants, cleaning fluids and more, the spray bottle is an ideal for succulent plant cleaning.
                         </p>
                     </div>

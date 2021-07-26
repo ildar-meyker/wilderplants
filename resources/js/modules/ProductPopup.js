@@ -1,5 +1,6 @@
 import $ from "jquery";
 import "imagesloaded";
+import LessMore from "./LessMore";
 
 const ProductPopup = {
     _slider: null,
@@ -50,6 +51,8 @@ const ProductPopup = {
                     slideMargin: 0,
                     controls: false
                 });
+
+                LessMore.checkHeight($("#popup-product"));
             });
         });
     },
