@@ -161,12 +161,16 @@ export default {
 
         setSelectedPlants(products) {
             this.selectedPlants = products;
-            this.getPots();
+            if (products.length) {
+                this.getPots();
+            }
         },
 
         setSelectedPots(products) {
             this.selectedPots = products;
-            this.getAccessories();
+            if (products.length) {
+                this.getAccessories();
+            }
         },
 
         setSelectedAccessories(products) {
@@ -199,6 +203,8 @@ export default {
             this.loadingPots = true;
             this.pots = [];
 
+            console.log("getPots");
+
             axios
                 .get(this.productsUrl, {
                     params: {
@@ -221,6 +227,8 @@ export default {
         getAccessories() {
             this.loadingAccessories = true;
             this.accessories = [];
+
+            console.log("getAccessories");
 
             axios
                 .get(this.productsUrl, {
