@@ -14,8 +14,8 @@ const ProductPopup = {
     },
 
     handleCloseButton(e) {
-        $("#popup-product").removeClass("active");
-        this._slider = null;
+        e.preventDefault();
+        this.close();
     },
 
     prevSlide(e) {
@@ -55,6 +55,11 @@ const ProductPopup = {
                 LessMore.checkHeight($("#popup-product"));
             });
         });
+    },
+
+    close() {
+        $("#popup-product").removeClass("active");
+        this._slider = null;
     },
 
     init() {

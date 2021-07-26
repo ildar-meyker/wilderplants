@@ -198,6 +198,12 @@ export default {
         select(product) {
             if (product.price == 0) return;
 
+            const isSelected = !!this.selected.find((item) => {
+                return item.id == product.id;
+            });
+
+            if (isSelected) return;
+
             this.selected.push(product);
 
             if (!this.multiple) {
@@ -207,6 +213,16 @@ export default {
 
         openPopup(src) {
             ProductPopup.open(src);
+        },
+
+        add(id) {
+            const product = this.products.find((item) => {
+                return item.id == id;
+            });
+
+            if (product) {
+                this.select(product);
+            }
         },
 
         remove(id) {

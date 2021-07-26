@@ -31,6 +31,7 @@
                 :products="plants"
                 @change="setSelectedPlants"
                 :quickViewUrl="quickViewUrl"
+                ref="plants"
             ></Select>
         </div>
 
@@ -41,6 +42,7 @@
                 :products="pots"
                 @change="setSelectedPots"
                 :quickViewUrl="quickViewUrl"
+                ref="pots"
             ></Select>
         </div>
 
@@ -52,6 +54,7 @@
                 :products="accessories"
                 @change="setSelectedAccessories"
                 :quickViewUrl="quickViewUrl"
+                ref="accessories"
             ></Select>
         </div>
 
