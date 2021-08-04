@@ -173,9 +173,6 @@ export default {
 
         setSelectedPots(products) {
             this.selectedPots = products;
-            if (products.length) {
-                this.getAccessories();
-            }
         },
 
         setSelectedAccessories(products) {
@@ -240,8 +237,6 @@ export default {
                     params: {
                         type: "accessories",
                         size: this.checkedSize,
-                        plant: this.selectedPlants,
-                        pot: this.selectedPots,
                     },
                 })
                 .then((response) => {
