@@ -183,6 +183,8 @@ export default {
             this.loadingPlants = true;
             this.plants = [];
 
+            console.log("getPlants");
+
             axios
                 .get(this.productsUrl, {
                     params: {
