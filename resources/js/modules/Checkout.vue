@@ -166,6 +166,8 @@ export default {
             this.selectedPlants = products;
             if (products.length) {
                 this.getPots();
+            } else {
+                this.pots = [];
             }
         },
 
