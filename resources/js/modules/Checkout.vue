@@ -35,7 +35,7 @@
             ></Select>
         </div>
 
-        <div class="checkout__step" v-show="selectedPlants.length">
+        <div class="checkout__step">
             <Select
                 type="pot"
                 :loading="loadingPots"
@@ -46,7 +46,7 @@
             ></Select>
         </div>
 
-        <div class="checkout__step" v-show="selectedPots.length">
+        <div class="checkout__step">
             <Select
                 type="accessory"
                 :multiple="true"
@@ -238,8 +238,8 @@ export default {
                     params: {
                         type: "accessories",
                         size: this.checkedSize,
-                        plant: this.selectedPlants[0].id,
-                        pot: this.selectedPots[0].id,
+                        plant: this.selectedPlants,
+                        pot: this.selectedPots,
                     },
                 })
                 .then((response) => {
@@ -256,6 +256,7 @@ export default {
 
     beforeMount() {
         this.checkedSize = this.defaultSize;
+        this.getAccessories();
     },
 };
 </script>

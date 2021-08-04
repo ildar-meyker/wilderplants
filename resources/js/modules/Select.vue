@@ -1,14 +1,6 @@
 <template>
     <div>
-        <div v-if="loading">
-            <div class="lds-ellipsis checkout__loading">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-        <div v-if="products.length">
+        <div>
             <div class="checkout__step__title">{{ title }}</div>
 
             <div v-show="selected.length">
@@ -38,16 +30,28 @@
             </div>
 
             <div
-                class="checkout__select"
+                :class="[
+                    'checkout__select',
+                    {
+                        disabled: products.length == 0,
+                        loading: loading,
+                    },
+                ]"
                 v-click-outside="closeDropdown"
                 v-show="showSelect"
             >
                 <div class="checkout__select__button" @click="toggleDropdown">
                     <div class="checkout__select__button__input">
-                        Choose your {{ type }}
+                        <span>Choose your {{ type }}</span>
                     </div>
                     <div class="checkout__select__button__arrow">
                         <i class="icomoon-arrow-thin-down"></i>
+                    </div>
+                    <div class="lds-ellipsis checkout__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
                 <div

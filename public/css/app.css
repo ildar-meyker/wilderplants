@@ -3392,10 +3392,14 @@ a:hover {
   padding: 25px 30px;
   background: linear-gradient(226.76deg, rgba(255, 117, 195, 0.07) 0%, rgba(255, 166, 71, 0.07) 20%, rgba(255, 232, 63, 0.07) 40%, rgba(159, 255, 91, 0.07) 60%, rgba(112, 226, 255, 0.07) 80%, rgba(205, 147, 255, 0.07) 100%);
 }
-.checkout__loading {
+.checkout__loader {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 10px;
   transform-origin: 0 0;
   transform: scale(0.5);
-  height: 40px;
+  display: none;
 }
 .checkout__step {
   margin-bottom: 35px;
@@ -3438,6 +3442,16 @@ a:hover {
 }
 .checkout__select {
   position: relative;
+}
+.checkout__select.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.checkout__select.loading .checkout__select__button__input span {
+  opacity: 0;
+}
+.checkout__select.loading .checkout__loader {
+  display: block;
 }
 .checkout__select__button {
   position: relative;

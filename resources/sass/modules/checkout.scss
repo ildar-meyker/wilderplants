@@ -11,10 +11,14 @@
         rgba(205, 147, 255, 0.07) 100%
     );
 
-    &__loading {
+    &__loader {
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        left: 10px;
         transform-origin: 0 0;
         transform: scale(0.5);
-        height: 40px;
+        display: none;
     }
 
     &__step {
@@ -65,6 +69,20 @@
 
     &__select {
         position: relative;
+
+        &.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        &.loading {
+            .checkout__select__button__input span {
+                opacity: 0;
+            }
+            .checkout__loader {
+                display: block;
+            }
+        }
 
         &__button {
             position: relative;
